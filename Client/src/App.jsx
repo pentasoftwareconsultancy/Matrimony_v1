@@ -3,23 +3,24 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/UserPages/HomePage/HomePage";
 import LoginPage from "./Pages/UserPages/LoginPage/LoginPage";
 import RegisterPage from "./Pages/UserPages/RegisterPage/RegisterPage";
-
+import Navbar from "./Components/UserComponents/homeComponents/Navbar/Navbar";
 
 function App() {
   return (
-    <Routes>
-      {/* user Router */}
-       
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/login" element={<LoginPage />}/>
-        <Route path="/register" element={<RegisterPage />}/>
-        {/* <Route path="about" element={< />} /> */}
+    <>
+      <Navbar />
+      <Routes>
+        {/* User Routes */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        {/* <Route path="/about" element={<AboutPage />} /> */}
 
-        {/* Admin Router */}
-        {/* <Route path="/dashboard" element={<Contact />} />
-        <Route path="*" element={<NoPage />} /> */}
-      
-    </Routes>
+        {/* Admin Routes */}
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        {/* <Route path="*" element={<NoPage />} /> */}
+      </Routes>
+    </>
   );
 }
 
