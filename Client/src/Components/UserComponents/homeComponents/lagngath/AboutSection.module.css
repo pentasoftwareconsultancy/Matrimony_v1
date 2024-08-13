@@ -1,0 +1,35 @@
+.customCard {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+  }
+  
+  .customCardBody {
+    background-color: rgb(235, 232, 232);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .image {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .title {
+    color: rgb(179, 0, 71);
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .viewMoreButton {
+    background-color: rgb(255, 0, 102);
+    padding: 10px 20px;
+    width: 150px;
+    border: 1px solid rgb(255, 0, 102);
+  }
+  

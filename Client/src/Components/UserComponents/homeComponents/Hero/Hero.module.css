@@ -1,0 +1,8 @@
+/* Hero.module.css */
+.home {
+  position: relative;
+  height: 80vh;
+  background-image: url('/img/home_bg.webp'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+}
