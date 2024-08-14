@@ -1,0 +1,37 @@
+/* FamilyForm.module.css */
+.form {
+    /* Add styling for the form */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  

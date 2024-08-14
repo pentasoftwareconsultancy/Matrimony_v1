@@ -1,21 +1,26 @@
+import React from "react";
 import CheckoutStepper from "../../../Components/UserComponents/Form/Form";
+import PersonalDetails from "../../../Components/UserComponents/Form/PersonalDetails/PersonalDetails"; // Import the PersonalDetails component
+import HoroscopeDetails from "../../../Components/UserComponents/Form/HoroscopeDetails/HoroscopeDetails"; // Import the HoroscopeDetails component
+import FamilyDetails from "../../../Components/UserComponents/Form/FamilyDetails/FamilyDetails";
+import ExpectationsDetailsForm from "../../../Components/UserComponents/Form/ExpectationsDetailsForm/ExpectationsDetailsForm";
 
 const CheckOut = [
   {
-    name: "personal information",
-    Component: () => <div>saurabh </div>,
+    name: "Personal Information",
+    Component: () => <div><PersonalDetails/></div>, // Use PersonalDetails as the component
   },
   {
-    name: "holocsopcal information",
-    Component: () => <div>Add holocsopcal inforation </div>,
+    name: "Horoscopal Information",
+    Component: () => <div><HoroscopeDetails/></div>, // Use HoroscopeDetails as the component
   },
   {
-    name: "Education information",
-    Component: () => <div>Add Education inforation </div>,
+    name: "Family Information",
+    Component: () => <div><FamilyDetails/></div>, // Placeholder component
   },
   {
-    name: "Family information",
-    Component: () => <div>Add Family inforation </div>,
+    name: "Expectation Information",
+    Component: () => <div><ExpectationsDetailsForm/></div>, // Placeholder component
   },
 ];
 
