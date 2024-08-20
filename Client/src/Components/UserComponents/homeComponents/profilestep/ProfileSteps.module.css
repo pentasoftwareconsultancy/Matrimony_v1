@@ -1,0 +1,99 @@
+.profileStepsContainer {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Modern and clean font */
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .stepsSection {
+    margin-bottom: 50px;
+  }
+  
+  .circleIcon {
+    background-color: #c74a65; /* Same color as the text */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+  }
+  
+  .icon {
+    font-size: 2.5em; /* Increased font size for icons */
+    color: #ffffff; /* White color for icons to stand out on the circle background */
+  }
+  
+  .arrow {
+    width: 50px;
+    height: 2px;
+    background-color: #c74a65;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .arrow:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #c74a65;
+  }
+  
+  .stepTitle {
+    color: #c74a65;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .stepDescription {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .registerButton {
+    background-color: rgb(255, 0, 102);
+    padding: 10px 20px;
+    width: 150px;
+    border: 1px solid rgb(255, 0, 102);
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .stepsRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .stepColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+  }
+  
+  .arrowColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
