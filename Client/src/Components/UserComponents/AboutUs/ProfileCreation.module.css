@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .leftSection {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .heading {
+    color: #ff007f;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subtext {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .registerButton {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .registerButton:hover {
+    background-color: #e60072;
+  }
+  
+  .rightSection {
+    flex: 1;
+    text-align: center;
+    border: 1 solid whitesmoke;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+ 
+  }
+  
+  .image {
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active {
+    background-color: #ff007f;
+  }
+  

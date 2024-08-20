@@ -1,10 +1,10 @@
-import UserRegister from "../../../Components/UserComponents/LoginRegister/UserRegister/UserRegister"
+import UserRegister from '../../../Components/UserComponents/LoginRegister/UserRegister/UserRegister'
 
 
 function RegisterPage() {
   return (
     <div>
-      <UserRegister/>
+     <UserRegister/>
     </div>
   )
 }
