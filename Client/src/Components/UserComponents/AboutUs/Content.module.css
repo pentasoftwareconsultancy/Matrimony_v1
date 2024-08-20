@@ -1,0 +1,85 @@
+/* Content.module.css */
+
+.contentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    background-color: rgb(235, 232, 232);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .contentSection,
+  .formSection {
+    width: 45%;
+  }
+  
+  .heading {
+    color: #b30047;
+    margin-top: 0;
+  }
+  
+  .values {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .values li {
+    margin: 10px 0;
+  }
+  
+  .testimonials blockquote {
+    margin: 20px 0;
+    font-style: italic;
+    border-left: 2px solid #b30047;
+    padding-left: 15px;
+  }
+  
+  .formSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formSection form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formSection form label {
+    margin: 10px 0 5px;
+  }
+  
+  .formSection form input,
+  .formSection form select,
+  .formSection form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .formSection form button {
+    background-color: #ff0066;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .formSection form button:hover {
+    background-color: #e6005c;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .mt3 {
+    margin-top: 1rem;
+  }
+  
+  .invalidFeedback {
+    color: red;
+  }
+  

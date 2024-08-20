@@ -1,11 +1,9 @@
-import "./UserRegister.css"
+import React from 'react'
 
 function UserRegister() {
   return (
-    <div>
-      UserRegister
-    </div>
+    <div>UserRegister</div>
   )
 }
 
-export default UserRegister
+export default UserRegister;
