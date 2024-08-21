@@ -1,46 +1,34 @@
-import React, { useState } from 'react';
-import styles from './ForgotPassword.module.css';
+// import  from 'react';
+import { Link } from 'react-router-dom';
+import style from './ForgotPassword.module.css';
 
 const ForgotPassword = () => {
-  const [selectedOption, setSelectedOption] = useState('email');
-
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+ 
 
   return (
-    <div className={styles.forgotPasswordContainer}>
-      <h2 style={{fontSize:30, color:'#b41147' }}>Forgot Password</h2>
-      <form style={{width:'40vh', position:'relative', marginTop:'20px'}}>
-        <div className={styles.radioGroup}>
-          <label>
-            <input
-              type="radio"
-              value="email"
-              checked={selectedOption === 'email'}
-              onChange={handleOptionChange}
-            />
-            Email
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="mobile"
-              checked={selectedOption === 'mobile'}
-              onChange={handleOptionChange}
-            />
-            Mobile No
-          </label>
-        </div>
-        <div className={styles.inputGroup}>
+    <div className={style.registerContainer}>
+      <h1 className={style.title}>Forgot Password</h1>
+      <form 
+      // onSubmit={handleSubmit}
+      >
+        <div className={style.inputContainer}>
           <input
-            type={selectedOption === 'email' ? 'email' : 'text'}
-            placeholder={selectedOption === 'email' ? 'Enter your Email' : 'Enter your Mobile No'}
-            required
-            className={styles.inputField}
+            className={style.input}
+            type="email"
+            placeholder=" "
+            name="email"
+            // value={formValues.email}
+            // onChange={handleChange}
           />
+          <div className={style.textfield}>Enter your Email</div>
         </div>
-        <button type="submit" className={styles.submitBtn}>
+      
+        <Link to={"/register"}>
+          <div className={style.forgetpassword}>
+            Are you new user ? Please Register
+          </div>
+        </Link>
+        <button type="submit" className={style.btn}>
           Submit
         </button>
       </form>
