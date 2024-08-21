@@ -1,4 +1,3 @@
-import React from 'react'
 import BriedCard from '../../../Components/UserComponents/Bried/BriedCard'
 
 function Bried() {
