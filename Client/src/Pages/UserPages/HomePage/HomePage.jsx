@@ -1,6 +1,5 @@
 
 
-import About from "../../../Components/UserComponents/homeComponents/About/About";
 
 import Hero from "../../../Components/UserComponents/homeComponents/Hero/Hero";
 
@@ -9,7 +8,7 @@ function HomePage() {
     <div>
       <Hero/>
      
-      <About />
+     
 
     </div>
   );

@@ -53,7 +53,7 @@ function BiodataPage() {
   };
 
   const handleEdit = () => {
-    navigate('/expectations'); // Redirect to the form page for editing
+    navigate('/'); // Redirect to the form page for editing
   };
 
   const handleSubmit = () => {
