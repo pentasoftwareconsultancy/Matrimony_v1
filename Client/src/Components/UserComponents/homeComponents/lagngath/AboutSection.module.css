@@ -1,35 +1,60 @@
+.aboutSectionWrapper {
+  margin-top: 20px; /* Gap at the top */
+  margin-bottom: 20px; /* Gap at the bottom */
+}
+
+.customCol {
+  display: flex;
+  justify-content: center;
+}
+
 .customCard {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-  }
-  
-  .customCardBody {
-    background-color: rgb(235, 232, 232);
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .image {
-    width: 10%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .title {
-    color: rgb(179, 0, 71);
-  }
-  
-  .description {
-    margin-bottom: 20px;
-  }
-  
-  .viewMoreButton {
-    background-color: rgb(255, 0, 102);
-    padding: 10px 20px;
-    width: 150px;
-    border: 1px solid rgb(255, 0, 102);
-  }
-  
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.customCardBody {
+  background-color: rgb(235, 232, 232);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.image {
+  width: 15%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers its container */
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: rgb(179, 0, 71);
+  margin-bottom: 15px; /* Add some space below the title */
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.viewMoreButton {
+  background-color: rgb(255, 0, 102);
+  padding: 10px 20px;
+  width: 150px;
+  border: 1px solid rgb(255, 0, 102);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: rgb(229, 0, 91);
+}
