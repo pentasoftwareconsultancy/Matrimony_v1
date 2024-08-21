@@ -21,7 +21,9 @@ function HomePage() {
 
       {/* <Hero/> */}
      
+
       {/* <About /> */}
+
 
 
     </div>

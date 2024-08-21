@@ -252,7 +252,7 @@ function FamilyDetails() {
         />
       </label>
 
-      <button type="submit" className={styles.submitButton}>Submit</button>
+      {/* <button type="submit" className={styles.submitButton}>Submit</button> */}
     </form>
   );
 }

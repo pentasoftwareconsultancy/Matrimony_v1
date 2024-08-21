@@ -37,8 +37,15 @@ function Navbar() {
         </li>
       </div>
       <div className="navbar-login">
+
         <Link to="/bride">Bride</Link>
      
+
+        <Link to="/briedcard">Bride</Link>
+        <span className="slash"> </span>
+        <span className="slash" style={{color:'white'}}>/</span>
+        <span className="slash"> </span>
+
         <Link to="/groom">Groom</Link>
         <span className="slash"> </span>
         <Link to="/login" className="login-button">
@@ -55,3 +62,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
