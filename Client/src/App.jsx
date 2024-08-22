@@ -6,7 +6,7 @@ import RegisterPage from "./Pages/UserPages/RegisterPage/RegisterPage";
 import Navbar from "./Components/UserComponents/homeComponents/Navbar/Navbar";
 import FormPage from "./Pages/UserPages/FormPage/FormPage";
 import Footer from "./Components/Footer/Footer";
-
+import AboutPage from "./Pages/UserPages/AboutPage/AboutPage"
 
 function App() {
   return (
@@ -19,7 +19,9 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/form" element={<FormPage />} />
 
-        {/* <Route path="/about" element={<AboutPage />} /> */}
+         <Route path="/about" element={<AboutPage />} /> 
+         
+         
 
         {/* Admin Routes */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
