@@ -3,11 +3,6 @@
   margin-bottom: 20px; /* Gap at the bottom */
 }
 
-.customCol {
-  display: flex;
-  justify-content: center;
-}
-
 .customCard {
   width: 100%;
   border-radius: 8px;
@@ -23,10 +18,9 @@
 }
 
 .image {
-  width: 15%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Ensure the image covers its container */
 }
 
 .textCol {
@@ -37,7 +31,7 @@
 
 .title {
   color: rgb(179, 0, 71);
-  margin-bottom: 15px; /* Add some space below the title */
+  margin-bottom: 15px;
 }
 
 .description {

@@ -42,6 +42,7 @@ const StatsSection = () => {
       </div>
       <div className={styles.cta}>
         <p>So what are you waiting for? Let us find Your Dream Partner</p>
+        
         <Link to="/register">
           <button className={styles.registerButton}>REGISTER FREE</button>
         </Link>
