@@ -1,0 +1,55 @@
+.biodataContainer {
+  padding: 20px;
+  background-color: white;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterFields label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filterButtons {
+  margin-top: 20px;
+}
+
+.personData {
+  
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+.info {
+  /* border: 1px solid #ddd; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  margin: 1rem;
+  gap: 2rem;
+}
+.alldata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dataimg{
+  
+  margin: 1rem;
+  height: 210px;
+  width: 290px;
+  /* border: 1px solid #ddd; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+h3{
+  color: rgb(37, 37, 254);
+  font-weight: bold;
+}

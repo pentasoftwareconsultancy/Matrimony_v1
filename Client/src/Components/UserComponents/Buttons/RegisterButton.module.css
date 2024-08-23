@@ -1,0 +1,16 @@
+/* RegisterButton.module.css */
+.button {
+    background-color: rgb(255, 0, 102); /* Background color */
+    padding: 10px 20px; /* Padding */
+    width: 150px; /* Width */
+    border: 1px solid rgb(255, 0, 102); /* Border */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.buttonHover:hover {
+    background-color: rgb(255, 51, 102); /* Darker shade on hover */
+}
