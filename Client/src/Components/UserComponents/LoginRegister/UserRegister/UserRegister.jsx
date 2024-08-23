@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import style from "./UserRegister.module.css";
 import {Link, useNavigate} from  "react-router-dom"
@@ -104,5 +105,11 @@ function UserRegister() {
     </div>
   );
 }
+
+
+
+
+
+
 
 export default UserRegister;

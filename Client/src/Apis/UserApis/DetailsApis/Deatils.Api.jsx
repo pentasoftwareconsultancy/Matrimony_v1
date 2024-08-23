@@ -1,6 +1,8 @@
+
 import axios from "axios";
 
 const backendUrl = "http://localhost:8080/api/v1/details";
+
 
 
 // src/apis/userApi.js
@@ -19,6 +21,7 @@ export const getAllUserProfiles = async () => {
       return null;
     }
   };
+
   
 
 
@@ -48,3 +51,4 @@ export const getAllUserProfiles = async () => {
       throw error; // Re-throw error for handling in the component
     }
   };
+

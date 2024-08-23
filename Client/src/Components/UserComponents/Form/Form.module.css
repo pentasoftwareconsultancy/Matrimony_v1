@@ -16,7 +16,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: #e72e77;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +27,11 @@
     font-size: 14px;
 }
 .active .step-number{
-    background-color: blue;
-    color: #000;
+    background-color: #e72e77;
+    color: white;
 }
 .complete .step-number{
-    background-color: yellowgreen;
+    background-color: #e72e77;
     color: #ffffff;
 }
 .progress-bar{
@@ -40,10 +40,10 @@
     
     left: 0;
     height: 4px;
-    background-color: chartreuse;
+    background-color: #e72e77;
 }
 .progress{
     height: 100%;
-    background-color: #000;
+    background-color: #e72e77;
     transition: 0.2s ease;
 }

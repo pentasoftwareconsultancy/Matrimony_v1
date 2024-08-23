@@ -1,0 +1,79 @@
+.statsSection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .statsSection h2 {
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .statBox {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .iconContainer {
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    font-size: 60px; /* Adjust the size as needed */
+  }
+  
+  .statBox h3 {
+    color: #c74a65;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .statText {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .statDescription {
+    font-size: 15px;
+  }
+  
+  .cta {
+    margin-top: 20px;
+    background-color: #b4245d; /* Background color for the call-to-action section */
+    padding: 20px;
+    color: white;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    color: white;
+    display: inline;
+  }
+  
+  .registerButton {
+    background-color: white;
+    color: rgb(255, 0, 102);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .registerButton:hover {
+    background-color: #e6e6e6;
+  }
+  

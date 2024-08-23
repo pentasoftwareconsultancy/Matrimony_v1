@@ -5,12 +5,16 @@ import LoginPage from "./Pages/UserPages/LoginPage/LoginPage";
 import RegisterPage from "./Pages/UserPages/RegisterPage/RegisterPage";
 import Navbar from "./Components/UserComponents/homeComponents/Navbar/Navbar";
 import FormPage from "./Pages/UserPages/FormPage/FormPage";
+
 import Footer from "./Components/UserComponents/Footer/Footer";
 import ForgotPage from "./Pages/UserPages/ForgotPage/Forgotpage";
 import AboutPage from "./Pages/UserPages/AboutPage/About"
 import BiodataPage from "./Components/UserComponents/Biodata/BiodataPage";
 
 import BriedCard from "./Pages/UserPages/Brieddata/Bried";
+
+
+
 
 
 function App() {
@@ -35,7 +39,9 @@ function App() {
 {/* full datailsform */}
 
 
-        {/* <Route path="/about" element={<AboutPage />} /> */}
+         <Route path="/about" element={<AboutPage />} /> 
+         
+         
 
         {/* Admin Routes */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
