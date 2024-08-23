@@ -24,7 +24,14 @@ function BriedCard() {
       <div className={styles.alldata}>
         {users.map((user) => (
           <div key={user._id} className={styles.info}>
-            <div className={styles.dataimg}></div>
+            <div className={styles.dataimg}>
+              <img
+                src={user.imageUrl}
+                alt={`${user.firstname} ${user.middlename || ""} ${
+                  user.lastname
+                }`}
+              />
+            </div>
             <div className={styles.personData}>
               <h3>{`${user.firstname} ${user.middlename || ""} ${
                 user.lastname

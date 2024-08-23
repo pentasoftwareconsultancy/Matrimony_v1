@@ -29,6 +29,12 @@ function App() {
 
         <Route path="/briedcard" element={< BriedCard/>} />
 
+{/* pandding */}
+{/* filer */}
+{/* main form */}
+{/* full datailsform */}
+
+
         {/* <Route path="/about" element={<AboutPage />} /> */}
 
         {/* Admin Routes */}
