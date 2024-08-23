@@ -5,11 +5,18 @@
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+
     height: auto;
     background-color: rgb(248, 247, 247);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+
+    background-color: rgb(235, 232, 232);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+
     margin: 0 auto; /* Center the container */
   }
   
@@ -19,7 +26,11 @@
   }
   
   .heading {
+
     color: rgb(179, 0, 71);
+
+    color: #b30047;
+
     margin-top: 0;
   }
   
@@ -34,8 +45,12 @@
   
   .testimonials blockquote {
     margin: 20px 0;
+
     font-style: Arial;
     border: 1px solid #b30047;
+
+    font-style: italic;
+
     border-left: 2px solid #b30047;
     padding-left: 15px;
   }
@@ -84,9 +99,10 @@
   .invalidFeedback {
     color: red;
   }
+
   .forgotPassword{
     position: relative;
     margin-left: 200px;
     color: #ff0066;
   }
- 
+
