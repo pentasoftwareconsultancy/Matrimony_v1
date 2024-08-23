@@ -1,0 +1,89 @@
+.wrapper {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px; /* Adjust padding for margins on the sides */
+  gap: 30px; /* Gap between map and contact section */
+  background-color: #f9f9f9; /* Slight background color to match the aesthetic */
+}
+
+.mapSection {
+  flex: 0 0 65%; /* 65% width for the map */
+  
+}
+
+.contactSection {
+  flex: 0 0 28%; /* 30% width for the contact section */
+  background-color: #f7f5f4; /* Light background for the contact section */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the contact section */
+  display: flex;
+  height: 330px;
+  position: relative;
+  margin-right: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+.contactSection h2 {
+  margin-bottom: 0px;
+
+}
+
+.contactSection p {
+ /* Consistent margin between text */
+  color: rgb(17, 15, 15);
+  
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-evenly; /* Evenly space the icons */
+  margin-top: 20px;
+  background-color: rgb(215, 56, 130);
+  align-items: center;
+position: relative;
+padding: 4px;
+}
+
+.socialIcons a img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+}
+
+/* Map iframe styles */
+.map {
+  width: 100%;
+  height: 350px; /* Adjust height as needed */
+  border-radius: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mapSection,
+  .contactSection {
+    flex: 0 0 100%;
+  }
+
+  .map {
+    height: 250px;
+  }
+}
+.address {
+  font-size: 1rem;
+
+
+}
+.anchore{
+  color: rgb(52, 49, 49);
+  font-size: 1rem;
+}

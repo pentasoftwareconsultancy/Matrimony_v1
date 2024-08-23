@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ProfileCreation.module.css';
+import NewCom from './NewCom';
 
 const images = [
   "/src/assets/images/pink-dress4.jpg",
@@ -24,15 +25,20 @@ const ProfileCreation = () => {
         <h1 className={styles.heading}>CREATE YOUR PROFILE TO FIND MATCH.....</h1>
         <p className={styles.subtext}>
           hello this is ankita and i love you Ensure your CSS for the slideshow is correctly
-          Feel free to adjust the content to better fit website's style and tone......
+          Feel free to adjust the content to better fit website's style and tone......<br/>
         </p>
         <button className={styles.registerButton}>Register Now</button>
+        <div style={{position:'relative', marginTop:'20px'}}>
+        <NewCom/>
+        </div>
+       
       </div>
       <div className={styles.rightSection}>
         <img src={images[currentSlide]} alt="Slideshow" className={styles.image} />
         <p className={styles.testimonial}>
           “I'm a testimonial. Click to edit me and add<br/> text that says something nice about you and your services.”
-        </p>
+        </p><br/>
+       
         <div className={styles.pagination}>
           {images.map((_, index) => (
             <span

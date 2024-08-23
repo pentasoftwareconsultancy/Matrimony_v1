@@ -1,0 +1,76 @@
+.container {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px; /* Reduce the max-width further */
+    margin: 0 auto; /* Center the container */
+    padding: 1rem; /* Adjust the padding for a more compact layout */
+    background: linear-gradient(to right, #e26584, #e0507e);
+    border-radius: 10px; /* Optional: Add some rounding to the container */
+}
+
+.imageWrapper {
+    flex: 1;
+    max-width: 40%; /* Adjust the image wrapper size */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 80px 80px 0 0; /* Curve from the upper side */
+    object-fit: cover;
+}
+
+.formWrapper {
+    flex: 1;
+    max-width: 50%;
+    padding: 1rem; /* Reduce the padding */
+}
+
+h2 {
+    font-size: 1.2rem; /* Reduce the font size for better fit */
+    margin-bottom: 0.8rem;
+    color: #fcf7f7;
+}
+
+.formWrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField, .textArea {
+    margin-bottom: 0.6rem; /* Adjust spacing between fields */
+    padding: 0.5rem; /* Slightly reduce padding for smaller size */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem; /* Slightly reduce font size */
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.inputField:focus, .textArea:focus {
+    border-color: #c80956;
+}
+
+.textArea {
+    height: 70px; /* Reduce the height of the textarea */
+    resize: none;
+}
+
+.submitButton {
+    padding: 0.5rem; /* Adjust button padding */
+    border-radius: 30px;
+    border: none;
+    background-color: #c80452;
+    color: white;
+    font-size: 1rem; /* Reduce font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #ff5f5f;
+}

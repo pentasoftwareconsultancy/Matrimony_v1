@@ -1,0 +1,103 @@
+.wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #f9fafb; /* Light background */
+  }
+  
+  .formContainer {
+    max-width: 800px;
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .imageLeft, .imageRight {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageLeft img, .imageRight img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .formSection {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .Contactp{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #787373;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    width: 48%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .select {
+    width: 48%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .submitButton {
+    background-color: #db2a73; /* Blue button color */
+    color: white;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .terms {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .terms a {
+    color: #b81358;
+    text-decoration: none;
+  }
+  

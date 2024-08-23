@@ -1,0 +1,156 @@
+.services {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .tab.active {
+    background-color: #b4245d;
+    color: #fff;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .packageContent {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 80%;
+    text-align: left;
+  }
+  
+  .packageContent ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .packageContent ol li {
+    margin-bottom: 10px;
+  }
+  
+  .payNowButton {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #b4245d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .payNowButton:hover {
+    background-color: #a31d4d;
+  }
+  
+  .ctta {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #b4245d;
+    padding: 20px;
+    color: white;
+  }
+  
+  .ctta p {
+    font-size: 18px;
+    color: white;
+    display: inline;
+  }
+  
+  .registerNowButton {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #b4245d;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile Devices */
+  @media (max-width: 767px) {
+    .services {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .packageContent {
+      width: 100%;
+    }
+  
+    .tabs {
+      flex-direction: column;
+    }
+  
+    .tab {
+      margin-bottom: 5px;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    .payNowButton {
+      width: 100%;
+    }
+  
+    .ctta {
+      margin-top: 40px;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .services {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .packageContent {
+      width: 90%;
+    }
+  
+    .tabs {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .tab {
+      margin-bottom: 5px;
+      margin-right: 5px;
+      width: auto;
+    }
+  
+    .payNowButton {
+      width: auto;
+    }
+  
+    .ctta {
+      margin-top: 50px;
+    }
+  }
+  
