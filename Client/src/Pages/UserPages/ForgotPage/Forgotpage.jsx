@@ -1,12 +1,11 @@
-import React from 'react'
-import ForgotPassword from "../../../Components/UserComponents/LoginRegister/UserForget/ForgotPassword"
+import ForgotPassword from "../../../Components/UserComponents/LoginRegister/UserForget/ForgotPassword";
 
 function Forgetpage() {
   return (
     <div>
-            < ForgotPassword/>
+      <ForgotPassword />
     </div>
-  )
+  );
 }
 
 export default Forgetpage;

@@ -1,4 +1,8 @@
 
+import axios from "axios";
+
+const backendUrl = "http://localhost:8080/api/v1/details";
+
 
 
 // src/apis/userApi.js
@@ -17,4 +21,34 @@ export const getAllUserProfiles = async () => {
       return null;
     }
   };
+
   
+
+
+
+  export const saveUser = async (userData, image) => {
+    try {
+      const formData = new FormData();
+  
+      // Convert image to base64 string
+      const reader = new FileReader();
+      reader.readAsDataURL(image);
+      reader.onload = () => {
+        const base64Image = reader.result;
+        formData.append('profileImage', base64Image);
+      };
+  
+      formData.append('userData', JSON.stringify(userData));
+  
+      const response = await axios.post(`${backendUrl}/personal-details`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      return response.data;
+    } catch (error) {
+      console.error("Failed to save user", error);
+      throw error; // Re-throw error for handling in the component
+    }
+  };
+

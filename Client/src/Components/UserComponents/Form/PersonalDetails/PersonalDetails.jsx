@@ -1,330 +1,359 @@
-import React, { useState } from "react";
-import styles from './PersonalDetails.module.css'; // Updated to use modular CSS
+import { useState } from "react";
+import axios from "axios";
+import style from "./PersonalDetails.module.css";
 
 const PersonalDetails = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    middleName: "",
-    lastName: "",
-    gender: "",
-    maritalStatus: "",
-    otherMobile: "",
-    telephone: "",
-    caste: "",
-    birthDate: "",
-    bloodGroup: "",
-    bodyType: "",
-    height: "",
-    weight: "",
-    complexion: "",
-    specsLenses: "",
-    disabilities: "",
-    diet: "",
-    drink: "",
-    smoke: "",
-    registrationBy: "",
-  });
+  const [file, setFile] = useState();
+  // const [image,setImage]=useState()
+  const [selectedOption, setSelectedOption] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // Form submission logic
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   alert(`You selected: ${selectedOption}`);
+  // };
+
+  const handleUpload = () => {
+    const formdata = new FormData();
+    formdata.append("file", file);
+    console.log(file);
+    axios
+      .post("http://localhost:8080/upload", formdata)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
+  // useEffect(()=>{
+  //   // const formdata=new FormData()
+  //   // formdata.append("file",file)
+  //   console.log(file);
+  //   axios.get("http://localhost:8080/getImage")
+  //   .then(res=>setImage(res.data[0].image))
+  //   .catch(err=>console.log(err))
+  // })
   return (
-    <div className={styles.personalDetailsContainer}>
+    <div>
       <h2>Personal Details</h2>
-      <form className={styles.personalDetailsForm} onSubmit={handleSubmit}>
-        {/* Form rows with 3 fields per row */}
-        <div className={styles.formRow}>
-          <div className={styles.formGroup}>
-            <label>First Name</label>
+      <form>
+        <div className={style.formContainer}>
+          <div className={style.inputContainer}>
             <input
+              className={style.input}
               type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              placeholder="First Name"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
             />
+            <div className={style.textfield}>Enter First Name</div>
           </div>
-          <div className={styles.formGroup}>
-            <label>Middle Name</label>
-            <input
-              type="text"
-              name="middleName"
-              value={formData.middleName}
-              onChange={handleChange}
-              placeholder="Middle Name"
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label>Last Name</label>
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              placeholder="Last Name"
-            />
-          </div>
-        </div>
-        {/* Additional form rows for other fields */}
 
-        {/* ... */}
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Gender</label>
-            <select name="gender" value={formData.gender} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Other">Other</option>
-            </select>
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="email"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Enter Middel Name</div>
           </div>
-          <div className="form-group">
-            <label>Marital Status</label>
+
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="email"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Enter Last Name</div>
+          </div>
+          <div className={style.iconSelect}>
             <select
-              name="maritalStatus"
-              value={formData.maritalStatus}
-              onChange={handleChange}
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
             >
-              <option value="">Select</option>
-              <option value="Single">Single</option>
-              <option value="Married">Married</option>
-              <option value="Divorced">Divorced</option>
+              <option value="">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
           </div>
-        </div>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label>Other Mobile</label>
-            <input
-              type="text"
-              name="otherMobile"
-              value={formData.otherMobile}
-              onChange={handleChange}
-              placeholder="Other Mobile"
-            />
-          </div>
-          <div className="form-group">
-            <label>Telephone</label>
-            <input
-              type="text"
-              name="telephone"
-              value={formData.telephone}
-              onChange={handleChange}
-              placeholder="Telephone"
-            />
-          </div>
-          <div className="form-group">
-            <label>Caste</label>
-            <input
-              type="text"
-              name="caste"
-              value={formData.caste}
-              onChange={handleChange}
-              placeholder="Caste"
-            />
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Birth Date</label>
-            <input
-              type="date"
-              name="birthDate"
-              value={formData.birthDate}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label>Blood Group</label>
-            <select name="bloodGroup" value={formData.bloodGroup} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="A+">A+</option>
-              <option value="A-">A-</option>
-              <option value="B+">B+</option>
-              <option value="B-">B-</option>
-              <option value="AB+">AB+</option>
-              <option value="AB-">AB-</option>
-              <option value="O+">O+</option>
-              <option value="O-">O-</option>
-            </select>
-          </div>
-          <div className="form-group">
-            <label>Body Type</label>
-            <select name="bodyType" value={formData.bodyType} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="Slim">Slim</option>
-              <option value="Average">Average</option>
-              <option value="Athletic">Athletic</option>
-              <option value="Heavy">Heavy</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Height</label>
-            <select name="height" value={formData.height} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="4'5">4'5"</option>
-              <option value="5'0">5'0"</option>
-              <option value="5'5">5'5"</option>
-              <option value="6'0">6'0"</option>
-              <option value="6'5">6'5"</option>
-              {/* Add more height options here */}
-            </select>
-          </div>
-          <div className="form-group">
-            <label>Weight (kg)</label>
-            <input
-              type="text"
-              name="weight"
-              value={formData.weight}
-              onChange={handleChange}
-              placeholder="Weight"
-            />
-          </div>
-          <div className="form-group">
-            <label>Complexion</label>
-            <select name="complexion" value={formData.complexion} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="Fair">Fair</option>
-              <option value="Medium">Medium</option>
-              <option value="Dark">Dark</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Specs/Lenses</label>
-            <div className="radio-group">
-              <input
-                type="radio"
-                name="specsLenses"
-                value="Yes"
-                checked={formData.specsLenses === "Yes"}
-                onChange={handleChange}
-              />{" "}
-              Yes
-              <input
-                type="radio"
-                name="specsLenses"
-                value="No"
-                checked={formData.specsLenses === "No"}
-                onChange={handleChange}
-              />{" "}
-              No
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Disabilities</label>
-            <div className="radio-group">
-              <input
-                type="radio"
-                name="disabilities"
-                value="Yes"
-                checked={formData.disabilities === "Yes"}
-                onChange={handleChange}
-              />{" "}
-              Yes
-              <input
-                type="radio"
-                name="disabilities"
-                value="No"
-                checked={formData.disabilities === "No"}
-                onChange={handleChange}
-              />{" "}
-              No
-            </div>
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Diet</label>
-            <select name="diet" value={formData.diet} onChange={handleChange}>
-              <option value="">Select</option>
-              <option value="Vegetarian">Vegetarian</option>
-              <option value="Non-Vegetarian">Non-Vegetarian</option>
-              <option value="Vegan">Vegan</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Drink</label>
-            <div className="radio-group">
-              <input
-                type="radio"
-                name="drink"
-                value="Yes"
-                checked={formData.drink === "Yes"}
-                onChange={handleChange}
-              />{" "}
-              Yes
-              <input
-                type="radio"
-                name="drink"
-                value="No"
-                checked={formData.drink === "No"}
-                onChange={handleChange}
-              />{" "}
-              No
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Smoke</label>
-            <div className="radio-group">
-              <input
-                type="radio"
-                name="smoke"
-                value="Yes"
-                checked={formData.smoke === "Yes"}
-                onChange={handleChange}
-              />{" "}
-              Yes
-              <input
-                type="radio"
-                name="smoke"
-                value="No"
-                checked={formData.smoke === "No"}
-                onChange={handleChange}
-              />{" "}
-              No
-            </div>
-          </div>
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Registration By</label>
+          <div className={style.iconSelect}>
             <select
-              name="registrationBy"
-              value={formData.registrationBy}
-              onChange={handleChange}
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
             >
-              <option value="">Select</option>
-              <option value="Self">Self</option>
-              <option value="Mother">Mother</option>
-              <option value="Brother">Brother</option>
-              <option value="Friend">Friend</option>
-              <option value="Other">Other</option>
+              <option value="">Marital Status</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Blood Group</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Body Type</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Registration By</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Complexion</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Birth Date</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Height</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Weight</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
+            </select>
+          </div>
+
+          <div className={style.radioButtonGroup}>
+            <span className={style.title}>Indulgence</span>
+
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="yes"
+                  checked={selectedOption === "yes"}
+                  onChange={handleOptionChange}
+                />
+                Yes
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="no"
+                  checked={selectedOption === "no"}
+                  onChange={handleOptionChange}
+                />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div className={style.radioButtonGroup}>
+            <span className={style.title}>Specs/Lenses</span>
+
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="yes"
+                  checked={selectedOption === "yes"}
+                  onChange={handleOptionChange}
+                />
+                Yes
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="no"
+                  checked={selectedOption === "no"}
+                  onChange={handleOptionChange}
+                />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div className={style.radioButtonGroup}>
+            <span className={style.title}>Disabilities</span>
+
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="yes"
+                  checked={selectedOption === "yes"}
+                  onChange={handleOptionChange}
+                />
+                Yes
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  className={style.radioButton}
+                  type="radio"
+                  value="no"
+                  checked={selectedOption === "no"}
+                  onChange={handleOptionChange}
+                />
+                No
+              </label>
+            </div>
+          </div>
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="text"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Enter Education</div>
+          </div>
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="text"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Enter Occupation</div>
+          </div>
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="text"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Annual Income</div>
+          </div>
+          <div className={style.inputContainer}>
+            <input
+              className={style.input}
+              type="text"
+              placeholder=" "
+              name="email"
+              // value={formValues.email}
+              // onChange={handleChange}
+            />
+            <div className={style.textfield}>Annual Income</div>
+          </div>
+
+          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+
+          <div className={style.iconSelect}>
+            <select
+              className={style.iconSelect}
+              // id="iconSelect"
+              // value={selectedIcon}
+              // onChange={(e) => setSelectedIcon(e.target.value)}
+            >
+              <option value="">Caste</option>
+              <option value="male">Unmarried</option>
+              <option value="female">Divorcee</option>
+              <option value="female">Widow/Widower</option>
+              <option value="female">Separated</option>
             </select>
           </div>
         </div>
+        
+        <button onClick={handleUpload}>Save</button>
+        {/* Add other fields as needed */}
 
-        {/* <button type="submit" className={styles.submitButton}>Submit</button> */}
+        <br />
+        {/* <img src={`http://localhost:8080/`+image} alt=""/> */}
       </form>
     </div>
   );

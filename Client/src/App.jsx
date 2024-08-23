@@ -1,5 +1,5 @@
 import "./App.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/UserPages/HomePage/HomePage";
 import LoginPage from "./Pages/UserPages/LoginPage/LoginPage";
@@ -7,10 +7,10 @@ import RegisterPage from "./Pages/UserPages/RegisterPage/RegisterPage";
 import Navbar from "./Components/UserComponents/homeComponents/Navbar/Navbar";
 import FormPage from "./Pages/UserPages/FormPage/FormPage";
 
+
 import Footer from "./Components/UserComponents/Footer/Footer";
 import ForgotPage from "./Pages/UserPages/ForgotPage/Forgotpage";
-import AboutPage from "./Pages/UserPages/AboutPage/About"
-// import ServicesPage from "Pages/UserPages/ServicesPage/services";
+import AboutPage from "./Pages/UserPages/AboutPage/About";
 import BiodataPage from "./Components/UserComponents/Biodata/BiodataPage";
 import ContactPage from "./Pages/UserPages/ContactPage/Contact";
 import BriedCard from "./Pages/UserPages/Brieddata/Bried";
@@ -35,6 +35,12 @@ function App() {
         <Route path="/biodatapage" element={<BiodataPage />} />
 <Route path="/services" element={<Service/>}/>
         <Route path="/briedcard" element={< BriedCard/>} />
+
+{/* pandding */}
+{/* filer */}
+{/* main form */}
+{/* full datailsform */}
+
 
          <Route path="/about" element={<AboutPage />} /> 
          

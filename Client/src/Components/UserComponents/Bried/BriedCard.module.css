@@ -45,7 +45,6 @@
 }
 
 .personData {
-  
   padding: 10px;
   margin-bottom: 20px;
 
@@ -60,9 +59,9 @@
   /* border: 1px solid #ddd; */
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
   gap: 2rem;
 }
@@ -70,17 +69,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.dataimg{
-  
+.dataimg {
   margin: 1rem;
   height: 210px;
   width: 290px;
   /* border: 1px solid #ddd; */
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
-h3{
+h3 {
+  color: #e72e77;
+
   color: rgb(37, 37, 254);
   font-weight: bold;
 }
