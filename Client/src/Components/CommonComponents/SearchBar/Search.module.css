@@ -1,0 +1,61 @@
+.formContainer{
+    margin: 2rem;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  
+  }
+
+
+.inputContainer {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    margin: 2rem auto;
+    font-family: "Moderustic", sans-serif;
+    width: 100%;
+  }
+    
+  .input {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 50px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background: transparent;
+    transition: 0.2s ease;
+    z-index: 10;
+  }
+  
+  .textfield {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 0 5px;
+    margin: 0 20px;
+    transition: 0.2s ease;
+    pointer-events: none;
+  }
+  
+  .input:focus + .textfield,
+  .input:not(:placeholder-shown) + .textfield {
+    /* color: white; */
+    transform: translate(-15px, -20px) scale(0.88);
+    z-index: 20;
+    line-height: 30px;
+    height: auto;
+    color: black;
+    background-color: #ffffff;
+  }
+  .iconSelect{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #9c9b9b;
+    background: transparent;
+  
+  }

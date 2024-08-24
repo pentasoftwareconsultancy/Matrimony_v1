@@ -331,6 +331,7 @@ const PersonalDetails = () => {
             <div className={style.textfield}>Annual Income</div>
           </div>
 
+          
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
 
           <div className={style.iconSelect}>
