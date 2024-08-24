@@ -5,23 +5,19 @@ const NewComponent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textSection}>
-        <h1>Discover your ROI with GenAI</h1>
+        <h1> Find True Love with Our Matrimony Services"</h1>
         <p>
-          Efficient strategies make LLM training and development success
-          possible. Empower your research teams without sacrificing your budget
-          or business goals with our tips on strategic use, development of
-          minimum viable models, and prompt engineering for a variety of
-          applications.
+          Are you ready to embark on a lifelong journey with a loving partner? Our premier matrimony services are designed to help you find the perfect match for a meaningful and lasting relationship. With a personalized approach and a deep understanding of your values and preferences, we make the process of finding a soulmate both simple and rewarding. Whether you're seeking a traditional match or a modern connection, our expert team is here to guide you every step of the way.
         </p>
-        <div style={{position:'relative', marginTop:'10px'}}>
-        <Rgisterbutton/>
+        <div style={{ position: 'relative', marginTop: '10px' }}>
+          <Rgisterbutton />
         </div>
-      
+
       </div>
       <div className={styles.imageSection}>
-        <img 
-          src="/src/assets/images/White-flowers.jpg" 
-          alt="LLM Coding Assistants" 
+        <img
+          src="/src/assets/images/White-flowers.jpg"
+          alt="LLM Coding Assistants"
           className={styles.image}
         />
       </div>

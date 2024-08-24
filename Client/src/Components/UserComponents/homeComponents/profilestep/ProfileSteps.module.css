@@ -20,6 +20,7 @@
   
   .stepsSection {
     margin-bottom: 50px;
+
   }
   
   .circleIcon {
@@ -67,6 +68,8 @@
   .stepDescription {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    width: 250px;
   }
   
   .registerButton {
