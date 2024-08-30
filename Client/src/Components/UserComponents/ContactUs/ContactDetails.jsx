@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './ContactDetails.module.css';
+import ChatWidget from '../../../Components/UserComponents/Buttons/ChatWidget'
+// import WhatsAppButton from '../../../Components/UserComponents/Buttons/WhatsAppButton'
 import { FaFacebook, FaLinkedin, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 const ContactDetails = () => {
@@ -36,6 +38,8 @@ USA</a></p>
             <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram size={24} /></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><FaYoutube size={24} /></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><FaTiktok size={24} /></a>
+            {/* <WhatsAppButton/> */}
+           
           </div>
         </div>
       </div>

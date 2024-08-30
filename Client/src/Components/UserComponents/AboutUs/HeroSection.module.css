@@ -24,9 +24,15 @@
   }
   
   .heroText h1 {
-    font-size: 3rem; /* Adjust as needed */
-    margin-bottom: 10px;
-  }
+   /* font-size: 3rem; 
+    margin-bottom: 10px;  */
+    font-size: 38px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
   
   .heroText p {
     font-size: 1.5rem; /* Adjust as needed */

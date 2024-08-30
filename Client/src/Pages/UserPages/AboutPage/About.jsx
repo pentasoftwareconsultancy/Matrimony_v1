@@ -6,6 +6,7 @@ import Text from '../../../Components/UserComponents/AboutUs/Text';
 import NewComponent from '../../../Components/UserComponents/AboutUs/NewComponent';
 import NewCom from '../../../Components/UserComponents/AboutUs/NewCom';
 import WhyChooseUs from '../../../Components/UserComponents/AboutUs/WhyChooseUs';
+import WhatsAppButton from '../../../Components/UserComponents/Buttons/WhatsAppButton';
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
       <WhyChooseUs />
       {/* <NewCom /> */}
       {/* <Content /> */}
+      <WhatsAppButton/>
     </div>
   );
 }

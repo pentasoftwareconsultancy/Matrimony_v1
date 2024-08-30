@@ -5,7 +5,7 @@ const NewComponent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textSection}>
-        <h1> Find True Love with Our Matrimony Services"</h1>
+        <h1 className={styles.NewComponentH1}>  Find True Love with Our Matrimony Services.</h1>
         <p>
           Are you ready to embark on a lifelong journey with a loving partner? Our premier matrimony services are designed to help you find the perfect match for a meaningful and lasting relationship. With a personalized approach and a deep understanding of your values and preferences, we make the process of finding a soulmate both simple and rewarding. Whether you're seeking a traditional match or a modern connection, our expert team is here to guide you every step of the way.
         </p>

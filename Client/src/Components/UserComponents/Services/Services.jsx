@@ -87,8 +87,8 @@ const Services = () => {
 
   return (
     <div className={styles.services}>
-      <h1>Our Packages</h1>
-      <p>Choose the best plan that suits your needs and find your perfect match with ease. Our packages are designed to give you the best experience and help you connect with genuine profiles. Sign up today and start your journey towards finding true love!</p>
+      <h1 className={styles.Servic}>Our Packages</h1>
+      <p style={{textAlign:'center', fontSize:'16px'}}>Choose the best plan that suits your needs and find your perfect match with ease. Our packages are designed to give you the best experience and help you connect with genuine profiles. Sign up today and start your journey towards finding true love!</p>
       <div className={styles.tabs}>
         {Object.keys(serviceContent).map((tab) => (
           <div

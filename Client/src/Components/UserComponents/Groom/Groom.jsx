@@ -1,4 +1,4 @@
-import style from "./BriedCard.module.css";
+import style from "./Groom.module.css";
 import Search from "../../CommonComponents/SearchBar/Search";
 
 const dummyData = [
@@ -41,7 +41,7 @@ const dummyData = [
   },
 ];
 
-function BriedCard() {
+function Groom() {
   return (
     <div className={style.biodataContainer}>
       <Search />
@@ -72,4 +72,4 @@ function BriedCard() {
   );
 }
 
-export default BriedCard;
+export default Groom;

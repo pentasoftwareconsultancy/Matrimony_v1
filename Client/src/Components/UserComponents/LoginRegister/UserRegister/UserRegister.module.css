@@ -2,7 +2,9 @@
 .registerContainer {
   height: auto;
   width: 550px;
-  background-color: #e72e77;
+  /* background-color: #e72e77; */
+  background: linear-gradient(to right, #a80639,#d97b96 );
+  background-color: #e72e77;   
   border-radius: 15px;
   margin: 2rem auto;
   padding: 2rem;
@@ -11,10 +13,15 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.forgetpassword{
+  text-align: center;
+}
 
 .title {
   text-align: center;
   font-family: "Moderustic", sans-serif;
+  color: beige;
+  font-size: 25px;
 }
 
 .btn {

@@ -1,8 +1,54 @@
-/* Hero.module.css */
 .home {
   position: relative;
+  
   height: 80vh;
   background-image: url('/img/home_bg.webp'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.registrationForm {
+  background-color: rgba(255, 255, 255, 0.4); /* White with 80% opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row; /* Align fields horizontally */
+  gap: 10px;
+  align-items: center; /* Align items vertically in the center */
+  position: relative;
+  margin-top: 28rem;
+}
+
+.inputField,
+.selectField {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.registerButton {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #ff3377; /* Slightly darker pink */
+  border-color: #ff3377;
 }

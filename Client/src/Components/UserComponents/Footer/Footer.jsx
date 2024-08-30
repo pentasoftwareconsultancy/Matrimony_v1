@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerCredit}>
-        <p>© 2023 Influenca Template - All Rights Reserved</p>
+        <p style={{ textAlign:'center'}}>© 2023 Influenca Template - All Rights Reserved</p>
       </div>
     </footer>
   );

@@ -22,24 +22,24 @@ const ProfileCreation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
-        <h1 className={styles.heading}>CREATE YOUR PROFILE TO FIND MATCH.....</h1>
+        <h1 className={styles.headingg}>CREATE YOUR PROFILE TO FIND MATCH.....</h1>
         <p className={styles.subtext}>
           Hello, this is Ankita and I love you. Ensure your CSS for the slideshow is correct.
-          Feel free to adjust the content to better fit your website's style and tone.
+          Feel free to adjust the content to better fit your website's style and tone Feel free to adjust the content to better fit your website's style and tone..
         </p>
         <button className={styles.registerButton}>Register Now</button>
         <div style={{ position: 'relative', marginTop: '20px' }}>
           <NewCom />
         </div>
-        <p>
+        {/* <p>
           Feel free to adjust the content to better fit your website's style and tone.
-        </p>
-        <button className={styles.registerButton}>Register Now</button>
+        </p> */}
+        {/* <button className={styles.registerButton}>Register Now</button> */}
       </div>
       <div className={styles.rightSection}>
         <img src={images[currentSlide]} alt="Slideshow" className={styles.image} />
         <p className={styles.testimonial}>
-          “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+          “I'm a testimonial. Click to edit me and add text that says <br/> something nice about you and your services.”
         </p>
         <div className={styles.pagination}>
           {images.map((_, index) => (

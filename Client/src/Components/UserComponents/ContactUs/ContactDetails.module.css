@@ -20,7 +20,7 @@
   border-radius: 15px; /* Rounded corners */
   padding: 20px; /* Padding inside the contact section */
   display: flex;
-  height: 330px;
+  height: 380px;
   position: relative;
   margin-right: 40px;
   flex-direction: column;
@@ -43,7 +43,7 @@
 .socialIcons {
   display: flex;
   justify-content: space-evenly; /* Evenly space the icons */
-  margin-top: 20px;
+  margin-top: 0px;
   background-color: rgb(215, 56, 130);
   align-items: center;
 position: relative;

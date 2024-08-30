@@ -6,9 +6,14 @@
   }
   
   .headline {
-    color: rgb(179, 0, 71);
+    /* color: rgb(179, 0, 71);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+    color: rgb(58, 58, 60);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .cardWrapper {
@@ -27,17 +32,23 @@
   .cardTitle {
     color: rgb(179, 0, 71);
     margin-top: 10px;
-    font-weight: bold;
+   font-size: 16px;
   }
   
   .viewMoreBtn {
-    background-color: rgb(179, 0, 71);
+    /* background-color: rgb(179, 0, 71);
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+
+    cursor: pointer; */
+    padding: 10px 20px;
+    border: none;
+    background-color: #e72e77;
+    color: white;
+    border-radius: 4px;
+    
   }
   
   .viewMoreBtn:hover {

@@ -31,11 +31,12 @@
 
 .title {
   color: rgb(179, 0, 71);
-  margin-bottom: 15px;
+  margin-bottom: 0.7px;
 }
 
 .description {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .viewMoreButton {
@@ -44,8 +45,8 @@
   width: 150px;
   border: 1px solid rgb(255, 0, 102);
   color: white;
-  text-transform: uppercase;
-  font-weight: bold;
+  
+
   transition: background-color 0.3s ease;
 }
 

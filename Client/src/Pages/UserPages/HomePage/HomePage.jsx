@@ -10,6 +10,7 @@ import AboutSection from "../../../Components/UserComponents/homeComponents/lagn
 import ProfileSteps from "../../../Components/UserComponents/homeComponents/profilestep/ProfileSteps";
 import StatsSection from "../../../Components/UserComponents/homeComponents/StatsSection/StatsSection";
 import MatchedByMatrimony from "../../../Components/UserComponents/homeComponents/MatchedByMatrimony/MatchedByMatrimony"
+import WhatsAppButton from "../../../Components/UserComponents/Buttons/WhatsAppButton";
 function HomePage() {
   return (
     <div>
@@ -18,7 +19,7 @@ function HomePage() {
       <AboutSection />
       <StatsSection />
       <MatchedByMatrimony />
-
+<WhatsAppButton/>
 
 
 

@@ -42,7 +42,7 @@
   .Contactp{
     margin-bottom: 2rem;
     font-size: 1rem;
-    color: #787373;
+    color: #3e3b3b;
   }
   
   .form {
@@ -93,10 +93,12 @@
   .terms {
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: #777;
+    color: #3e3b3b;
+    text-align: center;
   }
   
   .terms a {
+    
     color: #b81358;
     text-decoration: none;
   }

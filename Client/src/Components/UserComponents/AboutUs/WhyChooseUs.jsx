@@ -5,13 +5,13 @@ import { FaUsers, FaHandHoldingHeart, FaShieldAlt } from 'react-icons/fa';
 const WhyChooseUs = () => {
   return (
     <div className={styles.whyChooseUs}>
-      <h2 className={styles.heading}>Why Choose Us</h2>
+      <h2 className={styles.heading}>Why Choose Us .....?</h2>
       <div className={styles.features}>
         <div className={styles.feature}>
           <FaUsers className={styles.icon} />
           <h3 className={styles.title}>Large User Base</h3>
           <p className={styles.description}>
-            Connect with thousands of verified profiles to find your perfect match.
+            Connect with thousands of verified profiles to find your perfect match verified profiles to find.
           </p>
         </div>
         <div className={styles.feature}>
