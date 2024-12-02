@@ -15,6 +15,7 @@ import ContactPage from "./Pages/UserPages/ContactPage/Contact";
 import BriedCard from "./Pages/UserPages/Brieddata/Bried";
 import Service from "./Pages/UserPages/ServicesPage/Service";
 import Groom from "./Components/UserComponents/Groom/Groom";
+// import Banner from "./Components/UserComponents/homeComponents/Banner/banner";
 
 function App() {
   return (

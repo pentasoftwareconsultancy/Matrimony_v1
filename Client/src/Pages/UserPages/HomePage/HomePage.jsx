@@ -11,10 +11,13 @@ import ProfileSteps from "../../../Components/UserComponents/homeComponents/prof
 import StatsSection from "../../../Components/UserComponents/homeComponents/StatsSection/StatsSection";
 import MatchedByMatrimony from "../../../Components/UserComponents/homeComponents/MatchedByMatrimony/MatchedByMatrimony"
 import WhatsAppButton from "../../../Components/UserComponents/Buttons/WhatsAppButton";
+import Banner from "../../../Components/UserComponents/homeComponents/Banner/banner"; 
+
 function HomePage() {
   return (
     <div>
       <Hero />
+      <Banner />
       <ProfileSteps />
       <AboutSection />
       <StatsSection />
