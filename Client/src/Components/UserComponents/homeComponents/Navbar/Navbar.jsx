@@ -35,19 +35,16 @@ function Navbar() {
             Contact
           </Link>
         </li>
+
+        <li>
+        <Link to="/briedcard">Bride</Link>
+        </li>
+
+        <li>
+        <Link to="/groom">Groom</Link>
+        </li>
       </div>
       <div className="navbar-login">
-
-        
-     
-
-        <Link to="/briedcard">Bride</Link>
-        <span className="slash"> </span>
-        <span className="slash" style={{color:'white'}}>/</span>
-        <span className="slash"> </span>
-
-        <Link to="/groom">Groom</Link>
-        <span className="slash"> </span>
         <Link to="/login" className="login-button">
           Login
         </Link>

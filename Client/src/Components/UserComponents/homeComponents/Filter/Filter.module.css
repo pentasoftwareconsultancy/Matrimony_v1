@@ -1,0 +1,115 @@
+.home {
+    position: relative;
+    height: 80vh;
+    background-image: url('/img/home_bg.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 30% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registrationForm {
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row; /* Keep fields in a row */
+    gap: 20px; /* Adds gap between fields */
+    align-items: center; /* Center items vertically */
+    position: absolute; /* Absolute positioning to keep it centered */
+    top: 110%; /* Vertically center the form */
+    left: 50%; /* Horizontally center the form */
+    transform: translate(-50%, -50%); /* Offset by 50% of its own width/height */
+    width: 75%; /* Adjust the width as needed */
+  }
+  
+  .inputWrapper {
+    margin-bottom: 15px; /* Adds space between the fields */
+  }
+  
+  .label {
+    display: block; /* Makes the label take up full width and stay above the input */
+    margin-bottom: 5px; /* Space between label and input */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .inputField, .selectField {
+    width: 100%; /* Full width for inputs and select */
+    padding: 10px; /* Padding inside the input */
+    font-size: 14px; /* Font size inside input */
+    border: 1px solid #ccc; /* Border for the input fields */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .registerButton {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .registerButton:hover {
+    background-color:rgb(145, 20, 20); /* Slightly darker pink */
+    border-color: rgb(145, 20, 20)7;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .registrationForm {
+      width: 90%; /* Make the form width slightly smaller */
+      flex-direction: row; /* Keep fields in a row */
+      top: 115%; /* Adjust vertical positioning */
+      gap: 15px; /* Reduce the gap between fields */
+    }
+  
+    .inputWrapper {
+      margin-bottom: 20px; /* Increase space between fields */
+    }
+  
+    .label {
+      font-size: 14px; /* Adjust font size of labels */
+    }
+  
+    .inputField, .selectField {
+      padding: 12px; /* Increase padding for easier interaction on touch devices */
+      font-size: 16px; /* Increase font size for readability */
+    }
+  
+    .registerButton {
+      padding: 12px 24px; /* Larger button padding */
+      font-size: 16px; /* Larger button text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .registrationForm {
+      width: 95%; /* Make the form width almost full on very small screens */
+      top: 120%; /* Adjust vertical positioning */
+    }
+  
+    .inputWrapper {
+      margin-bottom: 25px; /* Add more space between fields */
+    }
+  
+    .inputField, .selectField {
+      padding: 14px; /* Increase padding even more for small screens */
+      font-size: 18px; /* Increase font size */
+    }
+  
+    .registerButton {
+      padding: 14px 28px; /* Larger padding for buttons */
+      font-size: 18px; /* Larger font size for button */
+    }
+  }
+  

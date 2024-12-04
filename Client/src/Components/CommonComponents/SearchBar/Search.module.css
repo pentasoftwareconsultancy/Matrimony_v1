@@ -1,4 +1,4 @@
-.formContainer{
+/* .formContainer{
     margin: 2rem;
     display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +43,7 @@
   
   .input:focus + .textfield,
   .input:not(:placeholder-shown) + .textfield {
-    /* color: white; */
+  
     transform: translate(-15px, -20px) scale(0.88);
     z-index: 20;
     line-height: 30px;
@@ -58,4 +58,4 @@
     border: 1px solid #9c9b9b;
     background: transparent;
   
-  }
+  } */

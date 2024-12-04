@@ -12,6 +12,7 @@ import StatsSection from "../../../Components/UserComponents/homeComponents/Stat
 import MatchedByMatrimony from "../../../Components/UserComponents/homeComponents/MatchedByMatrimony/MatchedByMatrimony"
 import WhatsAppButton from "../../../Components/UserComponents/Buttons/WhatsAppButton";
 import Banner from "../../../Components/UserComponents/homeComponents/Banner/banner"; 
+import Filter from "../../../Components/UserComponents/homeComponents/Filter/Filter";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       <AboutSection />
       <StatsSection />
       <MatchedByMatrimony />
+      <Filter />
 <WhatsAppButton/>
 
 
