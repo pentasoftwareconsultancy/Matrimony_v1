@@ -57,11 +57,12 @@
   
   .registerButton {
     transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #c07acb;
   }
   
   .registerButton:hover {
-    background-color:rgb(145, 20, 20); /* Slightly darker pink */
-    border-color: rgb(145, 20, 20)7;
+    background-color:#c07acb; /* Slightly darker pink */
+    /* border-color: rgb(145, 20, 20)7; */
   }
   
   /* Mobile Responsiveness */

@@ -43,6 +43,10 @@ function Navbar() {
         <li>
         <Link to="/groom">Groom</Link>
         </li>
+
+        <li>
+        <Link to="/language">Language</Link>
+        </li>
       </div>
       <div className="navbar-login">
         <Link to="/login" className="login-button">
