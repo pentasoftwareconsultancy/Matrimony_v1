@@ -143,19 +143,19 @@ body {
 
 @media (max-width: 768px) {
   .footerSection h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .footerSection h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .footerSection p {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .footerSection ul li a {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .footerBottom {
@@ -165,11 +165,11 @@ body {
 
   .location p,
   .contactInfo p {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .socials a {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 
@@ -179,19 +179,19 @@ body {
   }
 
   .footerSection h2 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .footerSection h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .footerSection p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .footerSection ul li a {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .footerBottom {
@@ -205,6 +205,6 @@ body {
   }
 
   .footerCredit p {
-    font-size: 12px;
+    font-size: 20px;
   }
 }

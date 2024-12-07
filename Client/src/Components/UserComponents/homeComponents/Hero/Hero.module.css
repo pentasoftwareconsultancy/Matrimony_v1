@@ -31,7 +31,7 @@
 
   .overlay {
     padding: 10px; /* Add padding to prevent content from being cramped */
-    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for readability */
+    /* Slightly darker overlay for readability */
   }
 }
 
