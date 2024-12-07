@@ -144,7 +144,7 @@
 }
 
 /* Very Small Screens */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
     .features_div_wrap ul.features_ul li {
         font-size: 16px; /* Adjust font size for very small screens */
     }

@@ -44,9 +44,9 @@ function Navbar() {
         <Link to="/groom">Groom</Link>
         </li>
 
-        <li>
+        {/* <li>
         <Link to="/language">Language</Link>
-        </li>
+        </li> */}
       </div>
       <div className="navbar-login">
         <Link to="/login" className="login-button">

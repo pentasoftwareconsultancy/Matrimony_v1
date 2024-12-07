@@ -1,3 +1,4 @@
+/* Base Styles */
 .home {
   position: relative;
   height: 80vh;
@@ -21,5 +22,26 @@
   align-items: center;
 }
 
+/* Responsive Design */
+@media (max-width: 767px) {
+  .home {
+    height: 60vh; /* Reduce height for better fit on smaller screens */
+    background-size: cover; /* Ensure the background scales properly */
+  }
 
+  .overlay {
+    padding: 10px; /* Add padding to prevent content from being cramped */
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for readability */
+  }
+}
 
+@media (max-width: 480px) {
+  .home {
+    height: 50vh; /* Further reduce height for very small screens */
+  }
+
+  .overlay {
+    padding: 20px; /* Ensure better spacing for mobile content */
+    text-align: center; /* Center text or elements within the overlay */
+  }
+}
