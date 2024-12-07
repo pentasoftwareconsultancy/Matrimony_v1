@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h2 style={{color:'white'}}>Maratha Vishw</h2>
+        <h2 style={{color:'white'}}>Maratha Vishv</h2>
       </div>
       <div className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>
@@ -48,11 +48,11 @@ function Navbar() {
         <Link to="/language">Language</Link>
         </li> */}
       </div>
-      <div className="navbar-login">
+      {/* <div className="navbar-login">
         <Link to="/login" className="login-button">
           Login
         </Link>
-      </div>
+      </div> */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
