@@ -1,120 +1,86 @@
-.home {
-    position: relative;
-    height: 80vh;
-    background-image: url('/img/home_bg.webp'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    
+.searchContainer {
+  width: 800px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 15px; /* Space between fields */
+  justify-content: space-between; /* Distribute evenly */
+  align-items: center; /* Align items vertically in the center */
+
+}
+
+.select, .input {
+  flex: 1 1 calc(33% - 20px); /* Allow fields to grow/shrink; 3 per row */
+  min-width: 100px; /* Set a minimum width for fields */
+  max-width: 250px; /* Optional: Limit maximum width for better appearance */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input {
+  height: 40px;
+}
+
+.button {
+ 
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width:200px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Space above button */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .searchContainer {
+    width: 100%; /* Ensure the container is 100% width on small screens */
+    max-width: 100%; /* Avoid exceeding the screen width */
+    padding: 15px; /* Adjust padding for mobile */
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Black with 30% opacity */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+ 
+
+  .formContainer {
+    flex-direction: column; /* Stack fields vertically on mobile */
+    align-items: stretch; /* Make fields stretch to full width */
   }
-  
-  .registrationForm {
-    background-color: rgba(255, 255, 255, 0.8); /* White with opacity for transparency */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row; /* Keep fields in a row */
-    gap: 20px; /* Adds gap between fields */
-    align-items: center; /* Center items vertically */
-    position: absolute; /* Absolute positioning to keep it centered */
-    top: 110%; /* Vertically center the form */
-    left: 50%; /* Horizontally center the form */
-    transform: translate(-50%, -50%); /* Offset by 50% of its own width/height */
-    width: 95%; /* Adjust the width as needed */
-    margin-bottom: 40px;
+
+  .select, .input {
+    flex: 1 1 100%; /* Each field takes full width on mobile */
+    max-width: 100%; /* Ensure fields don’t exceed 100% width */
   }
-  
-  .inputWrapper {
-    margin-bottom: 15px; /* Adds space between the fields */
+
+  .button {
+    width: 100%; /* Make button take full width on mobile */
+    margin-top: 20px; /* Add extra margin on top of the button */
   }
-  
-  .label {
-    display: block; /* Makes the label take up full width and stay above the input */
-    margin-bottom: 5px; /* Space between label and input */
-    font-size: 16px; /* Adjust font size as needed */
-  }
-  
-  .inputField, .selectField {
-    width: 100%; /* Full width for inputs and select */
-    padding: 10px; /* Padding inside the input */
-    font-size: 14px; /* Font size inside input */
-    border: 1px solid #ccc; /* Border for the input fields */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  .registerButton {
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    color: #c07acb;
-  }
-  
-  .registerButton:hover {
-    background-color:#c07acb; /* Slightly darker pink */
-    /* border-color: rgb(145, 20, 20)7; */
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .registrationForm {
-      width: 100%; /* Make the form width slightly smaller */
-      flex-direction: row; /* Keep fields in a row */
-      top: 115%; /* Adjust vertical positioning */
-      gap: 15px; /* Reduce the gap between fields */
-      margin-bottom: 50px;
-    }
-  
-    .inputWrapper {
-      margin-bottom: 20px; /* Increase space between fields */
-    }
-  
-    .label {
-      font-size: 14px; /* Adjust font size of labels */
-    }
-  
-    .inputField, .selectField {
-      padding: 12px; /* Increase padding for easier interaction on touch devices */
-      font-size: 16px; /* Increase font size for readability */
-    }
-  
-    .registerButton {
-      padding: 12px 24px; /* Larger button padding */
-      font-size: 16px; /* Larger button text */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .registrationForm {
-      width: 95%; /* Make the form width almost full on very small screens */
-      top: 120%; /* Adjust vertical positioning */
-    }
-  
-    .inputWrapper {
-      margin-bottom: 25px; /* Add more space between fields */
-    }
-  
-    .inputField, .selectField {
-      padding: 14px; /* Increase padding even more for small screens */
-      font-size: 18px; /* Increase font size */
-    }
-  
-    .registerButton {
-      padding: 14px 28px; /* Larger padding for buttons */
-      font-size: 18px; /* Larger font size for button */
-    }
-  }
-  
+}

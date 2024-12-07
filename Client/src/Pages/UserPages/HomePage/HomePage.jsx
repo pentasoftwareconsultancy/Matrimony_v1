@@ -12,18 +12,19 @@ import StatsSection from "../../../Components/UserComponents/homeComponents/Stat
 import MatchedByMatrimony from "../../../Components/UserComponents/homeComponents/MatchedByMatrimony/MatchedByMatrimony"
 import WhatsAppButton from "../../../Components/UserComponents/Buttons/WhatsAppButton";
 import Banner from "../../../Components/UserComponents/homeComponents/Banner/banner"; 
-import Filter from "../../../Components/UserComponents/homeComponents/Filter/Filter";
+import Filter1 from "../../../Components/UserComponents/homeComponents/Filter/Filter";
 
 function HomePage() {
   return (
     <div>
       <Hero />
+      <Filter1 />
       <Banner />
       <ProfileSteps />
       <AboutSection />
       <StatsSection />
       <MatchedByMatrimony />
-      <Filter />
+      
 <WhatsAppButton/>
 
 

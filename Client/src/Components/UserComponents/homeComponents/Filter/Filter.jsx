@@ -1,68 +1,118 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
-import styles from './Filter.module.css';
+import React, { useState } from "react";
+import styles from "./Filter.module.css";
 
+function Filter1() {
+  const [filters, setFilters] = useState({
+    gender: "",
+    maritalStatus: "",
+    caste: "",
+    minHeight: "",
+    maxHeight: "",
+    education: "",
+    location: "",
+  });
 
-function Filter() {
-    return (
-<div className={styles.registrationFormWrapper}>
-<form className={styles.registrationForm}>
-  <div className={styles.inputWrapper}>
-    <label htmlFor="profileID" className={styles.label}>Profile ID</label>
-    <input 
-      type="text" 
-      id="profileID" 
-      placeholder="Enter Profile ID" 
-      className={styles.inputField} 
-    />
-  </div>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [name]: value,
+    }));
+  };
 
-  <div className={styles.inputWrapper}>
-    <label htmlFor="ageGroup" className={styles.label}>Age Group</label>
-    <select id="ageGroup" className={styles.selectField}>
-      <option value="" disabled selected>Select Age Group</option>
-      <option value="21-25">21 to 25</option>
-      <option value="26-35">26 to 35</option>
-      <option value="36-45">36 to 45</option>
-      <option value="46-50">46 to 50</option>
-    </select>
-  </div>
+  const applyFilters = () => {
+    console.log("Applied Filters:", filters);
+    
+  };
 
-  <div className={styles.inputWrapper}>
-    <label htmlFor="cast" className={styles.label}>Cast</label>
-    <select id="cast" className={styles.selectField}>
-      <option value="" disabled selected>Choose Cast</option>
-      <option value="bramhin">Bramhin</option>
-      <option value="maratha">Maratha</option>
-      <option value="jain">Jain</option>
-      <option value="c.k.p">C.K.P</option>
-      <option value="other">Other</option>
-    </select>
-  </div>
+  return (
+    <div className={styles.searchContainer}>
+      <h2 className={styles.title}>Filter Results</h2>
+      <div className={styles.formContainer}>
+        <select
+          name="gender"
+          className={styles.select}
+          value={filters.gender}
+          onChange={handleChange}
+        >
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
 
-  <div className={styles.inputWrapper}>
-    <label htmlFor="profileFor" className={styles.label}>Profile for</label>
-    <select id="profileFor" className={styles.selectField}>
-      <option value="" disabled selected>Select Profile For</option>
-      <option value="self">Self</option>
-      <option value="son">Son</option>
-      <option value="daughter">Daughter</option>
-      <option value="sibling">Sibling</option>
-    </select>
-  </div>
+        <select
+          name="maritalStatus"
+          className={styles.select}
+          value={filters.maritalStatus}
+          onChange={handleChange}
+        >
+          <option value="">Marital Status</option>
+          <option value="unmarried">Unmarried</option>
+          <option value="separated">Separated</option>
+          <option value="widowed">Widowed</option>
+        </select>
 
-  <Link to="/register">
-    <Button 
-      variant="primary" 
-      className={`btn-hover ${styles.registerButton}`} 
-      style={{ backgroundColor: 'rgb(255, 0, 102)', padding: '10px 20px', border: '1px solid rgb(255, 0, 102)' }}
-    >
-      Register
-    </Button>
-  </Link>
-</form>
-</div>
-    );
+        <select
+          name="caste"
+          className={styles.select}
+          value={filters.caste}
+          onChange={handleChange}
+        >
+          <option value="">Caste</option>
+          <option value="maratha">Maratha</option>
+          <option value="jain">Jain</option>
+        </select>
+
+        <select
+          name="minHeight"
+          className={styles.select}
+          value={filters.minHeight}
+          onChange={handleChange}
+        >
+          <option value="">Minimum Height</option>
+          <option value="4.6">4.6</option>
+          <option value="4.8">4.8</option>
+        </select>
+
+        <select
+          name="maxHeight"
+          className={styles.select}
+          value={filters.maxHeight}
+          onChange={handleChange}
+        >
+          <option value="">Maximum Height</option>
+          <option value="5.10">5.10</option>
+          <option value="5.11">5.11</option>
+        </select>
+
+        <select
+          name="education"
+          className={styles.select}
+          value={filters.education}
+          onChange={handleChange}
+        >
+          <option value="">Expected Education</option>
+          <option value="bachelor">Bachelor's</option>
+          <option value="master">Master's</option>
+          <option value="master">Graduate</option>
+          
+        </select>
+
+        <input
+          type="text"
+          name="location"
+          className={styles.input}
+          placeholder="Location"
+          value={filters.location}
+          onChange={handleChange}
+        />
+
+        <button className={styles.button} onClick={applyFilters}>
+          Apply Filters
+        </button>
+      </div>
+    </div>
+  );
 }
-export default Filter;
+
+export default Filter1;

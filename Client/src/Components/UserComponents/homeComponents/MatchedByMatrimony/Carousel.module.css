@@ -1,57 +1,109 @@
 .carouselContainer {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-  }
-  
-  .headline {
-    /* color: rgb(179, 0, 71);
-    font-weight: bold;
-    margin-bottom: 20px; */
-    color: rgb(58, 58, 60);
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .cardWrapper {
-    width: 18rem;
-    margin: 0 10px;
-    text-align: center;
-  }
-  
-  .cardImage {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .cardTitle {
-    color: rgb(179, 0, 71);
-    margin-top: 10px;
-   font-size: 16px;
-  }
-  
-  .viewMoreBtn {
-    /* background-color: rgb(179, 0, 71);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
 
-    cursor: pointer; */
-    padding: 10px 20px;
-    border: none;
-    background-color: #e72e77;
-    color: white;
-    border-radius: 4px;
-    
+.headline {
+  color: rgb(58, 58, 60);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cardWrapper {
+  width: 18rem;
+  margin: 0 10px;
+  text-align: center;
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.cardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  color: rgb(179, 0, 71);
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.viewMoreBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e72e77;
+  color: white;
+  border-radius: 4px;
+}
+
+.viewMoreBtn:hover {
+  background-color: rgb(150, 0, 60);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjusting headline font size for smaller screens */
+  .headline {
+    font-size: 20px;
   }
-  
-  .viewMoreBtn:hover {
-    background-color: rgb(150, 0, 60);
+
+  /* Stack the cards vertically (one below the other) */
+  .carouselContainer {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center the cards */
   }
-  
+
+  /* Adjust card wrapper for stacked view */
+  .carousel .carousel-item {
+    display: flex;
+    flex-direction: column; /* Ensure carousel items are stacked */
+    align-items: center; /* Center align cards */
+    width: 100%; /* Take full width */
+    justify-content: center;
+  }
+
+  .cardWrapper {
+    width: 90%; /* Make cards take 90% of the container width */
+    margin-bottom: 20px; /* Space between stacked cards */
+  }
+
+  /* Adjust image height for mobile */
+  .cardImage {
+    height: 250px; /* Adjust image height on mobile */
+  }
+
+  /* Adjust card title font size for mobile */
+  .cardTitle {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  /* Button adjustments for mobile */
+  .viewMoreBtn {
+    width: 100%; /* Button takes up full width on mobile */
+    padding: 12px 20px; /* Slightly larger padding for easier tapping */
+  }
+}
+
+/* Additional adjustments for very small screens like phones in portrait mode */
+@media (max-width: 480px) {
+  /* Make headline even smaller for very small screens */
+  .headline {
+    font-size: 18px;
+  }
+
+  /* Further adjust image height for very small screens */
+  .cardImage {
+    height: 200px; /* Reduce height for extremely small screens */
+  }
+
+  /* Adjust button padding for very small screens */
+  .viewMoreBtn {
+    padding: 10px 15px; /* Slightly smaller padding */
+  }
+}

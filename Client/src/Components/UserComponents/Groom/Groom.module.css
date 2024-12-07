@@ -43,22 +43,36 @@ color: black;
     grid-template-columns: 1fr; /* Switch to single column layout on small screens */
   }
 
-  @media (max-width: 768px) {
-    img {
-      width: 105% !important;  /* Adjust width to 70% of the original size */
-      height: 180px !important; /* Maintain aspect ratio */
-      border-radius: 20px;
-    }
+  /* Ensure the image takes full width and the height is increased */
+  .card img {
+    width: 100% !important; /* Make image take full width */
+    height: 300px !important; /* Increase the height of the image */
+    border-radius: 20px;
+    object-fit: cover;  /* Ensure the image covers the area without distorting */
   }
+
+  /* Styling for the card */
   .card {
     width: 100%; /* Make the card take full width on small screens */
     height: auto; /* Adjust the height to auto so it doesn't overflow */
     padding: 1rem; /* Adjust padding */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content from top */
   }
 
+  /* Styling for the content (title and info) */
+  .card .content {
+    margin-top: 10px; /* Add spacing between image and content */
+  }
+
+  /* Styling for the title */
   h3 {
     font-size: 1.2rem; /* Reduce font size for mobile */
+    color: #e72e77; /* Keep the title color */
+    font-weight: bold;
   }
 }
+
 
 

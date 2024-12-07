@@ -100,14 +100,14 @@
 
 .container{
     background-color: #f4f1f1;
-    margin-top: 150px;
-    color: red;
+    margin-top: 10px;
+    color: rgb(165, 25, 25);
 }
 .section-title{
     text-align: center;
     font-size: x-large;
     color: black;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
 
