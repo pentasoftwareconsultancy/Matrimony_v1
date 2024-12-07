@@ -30,5 +30,22 @@ h3 {
 color: black;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .BriedCardinfo {
+    grid-template-columns: 1fr; /* Switch to single column layout on small screens */
+  }
+
+  .card {
+    width: 100%; /* Make the card take full width on small screens */
+    height: auto; /* Adjust the height to auto so it doesn't overflow */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Reduce font size for mobile */
+  }
+}
+
 
 

@@ -111,50 +111,39 @@
 }
 
 
-/* Mobile Responsiveness */
-@media only screen and (max-width: 767px) {
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack the feature items vertically on smaller screens */
     .features_div_wrap ul.features_ul {
-        margin-top: 2rem; /* Reduce top margin on mobile */
+        gap: 15px; /* Reduce the gap between items */
     }
 
     .features_div_wrap ul.features_ul li {
-        transform: translateX(0); /* Reset alignment for smaller screens */
-        width: 100%; /* Ensure full width for mobile */
-        margin-left: 0; /* Remove left margin for full width */
-        margin-right: 0; /* Remove right margin for full width */
+        width: 90%; /* Set feature item width to 90% for mobile */
+        margin-left: auto;
+        margin-right: auto; /* Center the items */
     }
 
-    .features_div_wrap ul.features_ul li:nth-child(odd),
+    .features_div_wrap ul.features_ul li:nth-child(odd) {
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
     .features_div_wrap ul.features_ul li:nth-child(even) {
-        align-self: center; /* Center the items */
+        margin-right: 0; /* Remove right margin on mobile */
     }
 
     .features_div_wrap ul.features_ul li .features_img {
-        margin: 0 auto 10px; /* Center image */
+        height: 40px;
+        width: 40px;
+        font-size: large; /* Adjust icon size */
     }
 
     .features_div_wrap ul.features_ul li .features_text {
-        text-align: center; /* Center text */
-        width: 100%; /* Full width for text */
+        font-size: 20px; /* Reduce font size on mobile */
     }
 
-    .features_div_wrap ul.features_ul li {
-        padding: 15px; /* Adjust padding for mobile */
-    }
-}
-
-/* Very Small Screens */
-@media only screen and (max-width: 400px) {
-    .features_div_wrap ul.features_ul li {
-        font-size: 16px; /* Adjust font size for very small screens */
-    }
-
-    .features_div_wrap ul.features_ul li .features_img {
-        width: 40px; /* Smaller image size */
-        height: 40px; /* Smaller image size */
-    }
-
-    .features_div_wrap ul.features_ul li .features_text {
-        font-size: 18px; /* Adjust text size for small screens */
+    .section-title {
+        font-size: 1.5rem; /* Reduce the section title size */
+        margin-top: 10px; /* Adjust margin */
     }
 }

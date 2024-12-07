@@ -56,3 +56,36 @@
 .button:hover {
   background-color: #0056b3;
 }
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .searchContainer {
+    width: 100%; /* Ensure the container is 100% width on small screens */
+    max-width: 100%; /* Avoid exceeding the screen width */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+
+  @media (max-width: 768px) {
+    .your-image-class {  /* Replace with the actual class or selector for your image */
+      width: 80%; /* Adjust the width to a smaller value (you can tweak this percentage as needed) */
+      height: auto; /* Maintain the aspect ratio */
+    }
+  }
+
+  .formContainer {
+    flex-direction: column; /* Stack fields vertically on mobile */
+    align-items: stretch; /* Make fields stretch to full width */
+  }
+
+  .select, .input {
+    flex: 1 1 100%; /* Each field takes full width on mobile */
+    max-width: 100%; /* Ensure fields don’t exceed 100% width */
+  }
+
+  .button {
+    width: 100%; /* Make button take full width on mobile */
+    margin-top: 20px; /* Add extra margin on top of the button */
+  }
+}
