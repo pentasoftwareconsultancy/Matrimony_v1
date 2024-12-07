@@ -52,20 +52,18 @@
     font-size: 20px;
   }
 
-  /* Stack the cards vertically (one below the other) */
+  /* Ensure carousel items are stacked vertically on mobile */
   .carouselContainer {
     display: flex;
-    flex-direction: column; /* Stack the cards vertically */
+    flex-direction: column; /* Stack the carousel items vertically */
     align-items: center; /* Center the cards */
   }
 
-  /* Adjust card wrapper for stacked view */
   .carousel .carousel-item {
     display: flex;
-    flex-direction: column; /* Ensure carousel items are stacked */
-    align-items: center; /* Center align cards */
-    width: 100%; /* Take full width */
-    justify-content: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items */
+    width: 100%; /* Ensure the items take the full width */
   }
 
   .cardWrapper {
