@@ -27,7 +27,7 @@
 
 .select, .input {
   flex: 1 1 calc(33% - 20px); /* Allow fields to grow/shrink; 3 per row */
-  min-width: 150px; /* Set a minimum width for fields */
+  min-width: 100px; /* Set a minimum width for fields */
   max-width: 250px; /* Optional: Limit maximum width for better appearance */
   padding: 10px;
   font-size: 1rem;
@@ -67,12 +67,7 @@
     padding: 15px; /* Adjust padding for mobile */
   }
 
-  @media (max-width: 768px) {
-    .your-image-class {  /* Replace with the actual class or selector for your image */
-      width: 80%; /* Adjust the width to a smaller value (you can tweak this percentage as needed) */
-      height: auto; /* Maintain the aspect ratio */
-    }
-  }
+ 
 
   .formContainer {
     flex-direction: column; /* Stack fields vertically on mobile */

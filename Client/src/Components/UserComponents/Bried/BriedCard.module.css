@@ -36,6 +36,12 @@ color: black;
     grid-template-columns: 1fr; /* Switch to single column layout on small screens */
   }
 
+  @media (max-width: 768px) {
+    .img {
+      width: 50%; /* Adjust width to 70% of the original size */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
   .card {
     width: 100%; /* Make the card take full width on small screens */
     height: auto; /* Adjust the height to auto so it doesn't overflow */
