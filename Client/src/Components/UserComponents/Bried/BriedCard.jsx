@@ -1,34 +1,53 @@
 import style from "./BriedCard.module.css";
 import { Link } from "react-router-dom";
 import Ufilter from "../../UserComponents/Ufilter/Ufilter";
+import Image1 from "./Bimages/img1.png"
+import Image2 from "./Bimages/img2.png"
+import Image3 from "./Bimages/img3.png"
+import Image4 from "./Bimages/img4.png"
+import Image5 from "./Bimages/img5.png"
+import Image6 from "./Bimages/img6.png"
+import Image7 from "./Bimages/img7.png"
+import Image8 from "./Bimages/img8.png"
+import Image9 from "./Bimages/img9.png"
+import Image10 from "./Bimages/img10.png"
 
 const encryptMobileNumber = (mobno) => {
-  // Extracting the first part (first digits) and last part (last 6 digits)
+  if (!mobno || typeof mobno !== "string") {
+    return "Unavailable"; // Fallback for missing or invalid numbers
+  }
+
   const firstPart = mobno.slice(0, -6);
   const lastPart = mobno.slice(-6);
-  
-  // Encrypt the last 6 digits and replace them with 'X'
-  const encryptedLastPart = btoa(lastPart); // Base64 encoding the last 6 digits
-  const maskedMobno = `${firstPart}XXXXXX`; // Mask the last 6 digits with X
 
-  return maskedMobno; // Return the formatted mobile number with encrypted last 6 digits
+  return `${firstPart}XXXXXX`; // Mask the last 6 digits with X
 };
+
 
 const dummyData = [
   {
+   
     id: 1,
-    name: "John Doe",
-    age: "30",
-    city: "New York",
-    area: "Manhattan",
-    height: "6ft",
-    mobno: "+917744875601",
-    imgSrc: "https://cdn0.weddingwire.in/article/3713/3_2/1280/jpg/63173-marriage-images-rituals-wedding-photography-lead-image.webp",
-    education: "MBA",
-    occupation: "Software Engineer",
-    motherName: "Jane Doe",
-    fatherName: "Richard Doe",
-  },
+      name: "Priya Kulkarni",
+      age: 25,
+      birthTime: "3:00pm",
+      BloodGroup: "B+ve",
+      caste: "Maratha",
+      rashi: "Tula",
+      height: "5ft 4in",
+      city: "Akola",
+      area: "Jatharpeth",
+      mobileNo: +919865432178,
+      education: "MCom",
+      occupation: "Professor",
+      annualIncome: "6 LPA",
+      motherName: "Sandhya Kulkarni",
+      fatherName: "Prakash Kulkarni",
+      imgSrc: Image1,
+    },
+   
+   
+
   {
     id: 2,
     name: "Jane Smith",
@@ -37,7 +56,7 @@ const dummyData = [
     area: "Hollywood",
     height: "5ft 7in",
     mobno: "+918734676522",
-    imgSrc: "https://wedding-photography.in/images/videography-photography/traditional-wedding-photography-photography1s.jpg",
+    imgSrc: Image2,
     education: "Bachelors in Arts",
     occupation: "Artist",
     motherName: "Emily Smith",
@@ -51,7 +70,7 @@ const dummyData = [
     area: "Hollywood",
     height: "5ft 7in",
     mobno: "+918734676522",
-    imgSrc: "https://wedding-photography.in/images/videography-photography/traditional-wedding-photography-photography1s.jpg",
+    imgSrc: Image3,
     education: "Bachelors in Arts",
     occupation: "Artist",
     motherName: "Emily Smith",
@@ -65,13 +84,103 @@ const dummyData = [
     area: "Hollywood",
     height: "5ft 7in",
     mobno: "+918734676522",
-    imgSrc: "https://wedding-photography.in/images/videography-photography/traditional-wedding-photography-photography1s.jpg",
+    imgSrc: Image4,
     education: "Bachelors in Arts",
     occupation: "Artist",
     motherName: "Emily Smith",
     fatherName: "Tom Smith",
   },
-  // ... more data
+  
+  {
+    id: 5,
+    name: "Jane Smith",
+    age: "28",
+    city: "Los Angeles",
+    area: "Hollywood",
+    height: "5ft 7in",
+    mobno: "+918734676522",
+    imgSrc: Image5,
+    education: "Bachelors in Arts",
+    occupation: "Artist",
+    motherName: "Emily Smith",
+    fatherName: "Tom Smith",
+  },
+  {
+    id: 6,
+    name: "Jane Smith",
+    age: "28",
+    city: "Los Angeles",
+    area: "Hollywood",
+    height: "5ft 7in",
+    mobno: "+918734676522",
+    imgSrc: Image6,
+    education: "Bachelors in Arts",
+    occupation: "Artist",
+    motherName: "Emily Smith",
+    fatherName: "Tom Smith",
+  },
+  {
+    id: 7,
+    name: "Jane Smith",
+    age: "28",
+    city: "Los Angeles",
+    area: "Hollywood",
+    height: "5ft 7in",
+    mobno: "+918734676522",
+    imgSrc: Image7,
+    education: "Bachelors in Arts",
+    occupation: "Artist",
+    motherName: "Emily Smith",
+    fatherName: "Tom Smith",
+  },
+  {
+    id: 8,
+    name: "Jane Smith",
+    age: "28",
+    city: "Los Angeles",
+    area: "Hollywood",
+    height: "5ft 7in",
+    mobno: "+918734676522",
+    imgSrc: Image8,
+    education: "Bachelors in Arts",
+    occupation: "Artist",
+    motherName: "Emily Smith",
+    fatherName: "Tom Smith",
+  },
+  {
+    id: 9,
+    name: "Jane Smith",
+    age: "28",
+    city: "Los Angeles",
+    area: "Hollywood",
+    height: "5ft 7in",
+    mobno: "+918734676522",
+    imgSrc: Image9,
+    education: "Bachelors in Arts",
+    occupation: "Artist",
+    motherName: "Emily Smith",
+    fatherName: "Tom Smith",
+  },
+  {
+    id: 10,
+      name: "Priya Kulkarni",
+      age: 25,
+      birthTime: "3:00pm",
+      BloodGroup: "B+ve",
+      caste: "Maratha",
+      rashi: "Tula",
+      height: "5ft 4in",
+      city: "Akola",
+      area: "Jatharpeth",
+      mobileNo: "+919865432178",
+      education: "MCom",
+      occupation: "Professor",
+      annualIncome: "6 LPA",
+      motherName: "Sandhya Kulkarni",
+      fatherName: "Prakash Kulkarni",
+      imgSrc: Image10,
+  },
+
 ];
 
 function BriedCard() {
@@ -93,6 +202,7 @@ function BriedCard() {
               <div className={style.cardinfo}>
                 <p>Name: {data.name}</p>
                 <p>Age: {data.age}</p>
+                
                 <p>City: {data.city}</p>
                 <p>Area: {data.area}</p>
                 <p>Height: {data.height}</p>
