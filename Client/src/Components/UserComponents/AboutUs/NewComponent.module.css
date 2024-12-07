@@ -1,35 +1,26 @@
 /* Original styles */
 .container {
   display: flex;
-  width: 90%;
   justify-content: center;
-  position: relative;
   align-items: center;
-  margin-left: 50px;
+  margin: 0 auto;
   margin-bottom: 20px;
   background-color: #fdf9f9;
   color: rgb(69, 65, 65);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  width: 90%;
 }
 
 .textSection {
   flex: 1;
   margin-right: 2rem;
-  
 }
 
-/* h1 {
-  font-size: 25px;
-  font-weight: bold;
-  color: rgb(190, 43, 92);
-} */
-
-.NewComponentH1{
+.NewComponentH1 {
   font-size: 25px;
   color: rgb(190, 43, 92);
-
 }
 
 p {
@@ -37,8 +28,6 @@ p {
   line-height: 1.6;
   font-size: 16px;
   text-align: justify;
-
- 
 }
 
 .downloadButton {
@@ -81,6 +70,16 @@ p {
 
   .image {
     width: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .NewComponentH1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 
@@ -90,8 +89,14 @@ p {
     padding: 1rem;
   }
 
+  .textSection {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
   h1 {
     font-size: 2rem;
+    text-align: center;
   }
 
   p {
@@ -105,6 +110,7 @@ p {
 
   .image {
     width: 150px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -113,12 +119,14 @@ p {
     padding: 0.75rem;
   }
 
-  h1 {
+  .NewComponentH1 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   p {
     font-size: 0.9rem;
+    text-align: center;
   }
 
   .downloadButton {
@@ -129,5 +137,31 @@ p {
 
   .image {
     width: 120px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .NewComponentH1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .downloadButton {
+    font-size: 0.8rem;
+  }
+
+  .image {
+    width: 100px;
+    margin-bottom: 1rem;
   }
 }

@@ -18,29 +18,23 @@ const Footer = () => {
           <h3>Navigation</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="#">Pages</a></li>
+            {/* <li><a href="#">Pages</a></li> */}
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+
           </ul>
         </div>
         <div className={styles.footerSection}>
           <h3>Quick Link</h3>
           <ul>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Pricing</a></li>
+          <li><a href="/">Home</a></li>
+            <li><a href="/briedcard">Bride</a></li>
+            <li><a href="/groom">Groom</a></li>
+            <li><a href="/services">Services</a></li>
           </ul>
         </div>
-        <div className={styles.footerSection}>
-          <h3>Services</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">404</a></li>
-          </ul>
-        </div>
+        
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.location}>

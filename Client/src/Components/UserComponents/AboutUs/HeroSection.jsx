@@ -10,10 +10,7 @@ const HeroSection = () => {
         <p style={{position:'relative', textAlign:'center'}}>Your journey begins here</p>
         <button className={styles.heroButton}>Get Started</button>
       </div>
-      
-
-
-      
+           
     </div>
     
   );

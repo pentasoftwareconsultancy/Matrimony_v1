@@ -13,11 +13,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
 .cardWrapper {
   width: 18rem;
-  margin: 0 10px;
   text-align: center;
-  margin-bottom: 20px; /* Space between cards */
 }
 
 .cardImage {
@@ -52,20 +57,12 @@
     font-size: 20px;
   }
 
-  /* Ensure carousel items are stacked vertically on mobile */
-  .carouselContainer {
-    display: flex;
-    flex-direction: column; /* Stack the carousel items vertically */
-    align-items: center; /* Center the cards */
+  /* Stack the cards vertically (one below the other) */
+  .cardGrid {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row */
   }
 
-  .carousel .carousel-item {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align the items */
-    width: 100%; /* Ensure the items take the full width */
-  }
-
+  /* Adjust card wrapper for stacked view */
   .cardWrapper {
     width: 90%; /* Make cards take 90% of the container width */
     margin-bottom: 20px; /* Space between stacked cards */
