@@ -25,7 +25,7 @@ function HomePage() {
       <StatsSection />
       <MatchedByMatrimony />
       
-<WhatsAppButton/>
+{/* <WhatsAppButton/> */}
 
 
 

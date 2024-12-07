@@ -95,6 +95,7 @@
 @media screen and (max-width: 768px) {
     .biodataCard {
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .biodataImg {
