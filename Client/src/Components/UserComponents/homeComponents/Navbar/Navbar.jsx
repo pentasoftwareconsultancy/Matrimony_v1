@@ -37,11 +37,11 @@ function Navbar() {
         </li>
 
         <li>
-        <Link to="/briedcard">Bride</Link>
+        <Link to="/briedcard" onClick={toggleMenu}>Bride</Link>
         </li>
 
         <li>
-        <Link to="/groom">Groom</Link>
+        <Link to="/groom" onClick={toggleMenu}>Groom</Link>
         </li>
 
         {/* <li>
