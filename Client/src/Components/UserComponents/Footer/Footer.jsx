@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className={styles.contactInfo}>
           <p>+91 8989765407</p>
-          <p>mail@influenca.ld</p>
+          <p>nexuxctc2020@gmail.com</p>
         </div>
         <div className={styles.socials}>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>

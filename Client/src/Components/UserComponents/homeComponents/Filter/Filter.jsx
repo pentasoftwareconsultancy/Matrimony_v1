@@ -60,7 +60,7 @@ function Filter1() {
         >
           <option value="">Caste</option>
           <option value="maratha">Maratha</option>
-          <option value="jain">Jain</option>
+          <option value="jain">Kunabi</option>
         </select>
 
         <select
