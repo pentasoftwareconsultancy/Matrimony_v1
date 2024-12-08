@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import Ufilter from "../../UserComponents/Ufilter/Ufilter";
 import style from "./Groom.module.css";
 
-const encryptMobileNumber = (mobno) => {
-  // Extracting the first part (first digits) and last part (last 6 digits)
-  const firstPart = mobno.slice(0, -6);
-  const lastPart = mobno.slice(-6);
+// const encryptMobileNumber = (mobno) => {
+//   // Extracting the first part (first digits) and last part (last 6 digits)
+//   const firstPart = mobno.slice(0, -6);
+//   const lastPart = mobno.slice(-6);
   
-  // Encrypt the last 6 digits and replace them with 'X'
-  const encryptedLastPart = btoa(lastPart); // Base64 encoding the last 6 digits
-  const maskedMobno = `${firstPart}XXXXXX`; // Mask the last 6 digits with X
+//   // Encrypt the last 6 digits and replace them with 'X'
+//   const encryptedLastPart = btoa(lastPart); // Base64 encoding the last 6 digits
+//   const maskedMobno = `${firstPart}XXXXXX`; // Mask the last 6 digits with X
 
-  return maskedMobno; // Return the formatted mobile number with encrypted last 6 digits
-};
+//   return maskedMobno; // Return the formatted mobile number with encrypted last 6 digits
+// };
 
 const dummyData = [
   {
@@ -205,6 +205,8 @@ const dummyData = [
     motherName: "Rekha Kulkarni",
     fatherName: "Shankar Kulkarni",
   },
+
+  
 ];
 
 
@@ -231,7 +233,7 @@ function Groom() {
                 <p>City: {data.city}</p>
                 <p>Area: {data.area}</p>
                 <p>Height: {data.height}</p>
-                <p>Mob No: {encryptMobileNumber(data.mobileNo)}</p> {/* Corrected property */}
+                <p>Mob No: {data.mobileNo}</p> {/* Display encrypted mob no */}
               </div>
             </div>
           </Link>
