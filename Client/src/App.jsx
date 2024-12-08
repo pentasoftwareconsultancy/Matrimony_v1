@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/UserComponents/homeComponents/Navbar/Navbar";
@@ -18,17 +17,17 @@ import ContactPage from "./Pages/UserPages/ContactPage/Contact";
 import Service from "./Pages/UserPages/ServicesPage/Service";
 // import Banner from "./Components/UserComponents/homeComponents/Banner/banner";
 import DataBio from "./Components/UserComponents/DataBio/Databio";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 function App() {
 
-   // Scroll to top when the component is mounted
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []); 
+   
 
   return (
     <>
       <Navbar />
+      <ScrollToTop />
+
       <Routes>
         {/* User Routes */}
         <Route path="/" element={<HomePage />} />
