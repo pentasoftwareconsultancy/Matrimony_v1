@@ -23,7 +23,7 @@ body {
   padding: 10px;
   background-color: #db73eb;
   height: 65px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   left: 0;
