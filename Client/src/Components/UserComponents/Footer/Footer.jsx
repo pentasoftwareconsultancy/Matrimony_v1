@@ -1,7 +1,7 @@
-import React from 'react';
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';  // Import Link from React Router
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerSection}>
-          <h2>Maratha Vishw</h2>
+          <h2>Maratha Vishv</h2>
           <p>Find your perfect match with us – where love meets destiny. Explore a world of trusted connections and meaningful relationships. Your journey to forever begins here, with us by your side every step of the way.</p>
         </div>
         <div className={styles.footerSection}>

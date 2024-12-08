@@ -1,6 +1,6 @@
-import style from "./Groom.module.css";
 import { Link } from "react-router-dom";
 import Ufilter from "../../UserComponents/Ufilter/Ufilter";
+import style from "./Groom.module.css";
 
 const encryptMobileNumber = (mobno) => {
   // Extracting the first part (first digits) and last part (last 6 digits)
@@ -184,7 +184,7 @@ const dummyData = [
     occupation: "Lawyer",
     annualIncome: "16 LPA",
     motherName: "Saroj Desai",
-    fatherName: "Vishwas Desai",
+    fatherName: "Vishvas Desai",
   },
   {
     id: 10,
