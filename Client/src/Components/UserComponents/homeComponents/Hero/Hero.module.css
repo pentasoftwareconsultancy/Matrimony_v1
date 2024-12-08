@@ -52,21 +52,8 @@
   }
 
   .overlay {
-    padding: 10px; /* Add padding for mobile */
-    background-color: rgba(0, 0, 0, 0.5); /* Darken overlay for better readability */
-  }
-
-  .overlay h1 {
-    font-size: 1.8rem; /* Smaller font size for mobile */
-  }
-
-  .overlay p {
-    font-size: 1rem; /* Smaller text for mobile */
-  }
-
-  .overlay .btn {
-    font-size: 0.8rem; /* Smaller button for mobile */
-    padding: 8px 16px;
+    padding: 10px; /* Add padding to prevent content from being cramped */
+    /* Slightly darker overlay for readability */
   }
 }
 

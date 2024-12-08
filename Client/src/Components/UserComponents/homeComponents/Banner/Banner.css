@@ -112,38 +112,94 @@
 
 
 /* Mobile responsiveness */
-@media (max-width: 768px) {
-    /* Stack the feature items vertically on smaller screens */
-    .features_div_wrap ul.features_ul {
-        gap: 15px; /* Reduce the gap between items */
-    }
 
+
+/* Base styling remains the same */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Medium screens (e.g., tablets in landscape) */
     .features_div_wrap ul.features_ul li {
-        width: 90%; /* Set feature item width to 90% for mobile */
-        margin-left: auto;
-        margin-right: auto; /* Center the items */
+      width: 70%; /* Slightly narrower for medium screens */
+      margin-left: auto;
+      margin-right: auto; /* Center align for consistency */
+    }
+  
+    .features_div_wrap ul.features_ul li .features_text {
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    .features_div_wrap ul.features_ul li .features_img {
+      height: 45px;
+      width: 45px;
+    }
+  
+    .section-title {
+      font-size: 1.8rem; /* Scale section title */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Smaller screens (e.g., tablets in portrait) */
+    .features_div_wrap ul.features_ul li {
+      width: 80%; /* Slightly more compact width */
+    }
+  
+    .features_div_wrap ul.features_ul {
+      gap: 10px; /* Reduce gaps */
+    }
+  
+    .features_div_wrap ul.features_ul li .features_text {
+      font-size: 16px; /* Reduce font size for readability */
+    }
+  
+    .features_div_wrap ul.features_ul li .features_img {
+      height: 40px;
+      width: 40px; /* Adjust size of the icon */
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  }
+  
+/* Mobile responsiveness for extra-small screens */
+@media (max-width: 480px) {
+    /* Adjust list items for smaller screens */
+    .features_div_wrap ul.features_ul li {
+        width: 56%; /* Take most of the screen width */
+        margin: 10px auto; /* Center-align each item with space around */
+        align-self: center; /* Ensure items align properly */
     }
 
-    .features_div_wrap ul.features_ul li:nth-child(odd) {
-        margin-left: 0; /* Remove left margin on mobile */
+    /* Adjust flex direction to center-align and stack items */
+    .features_div_wrap ul.features_ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align content */
+        gap: 15px; /* Add space between items */
     }
 
-    .features_div_wrap ul.features_ul li:nth-child(even) {
-        margin-right: 0; /* Remove right margin on mobile */
+    .features_div_wrap ul.features_ul li .features_text {
+        font-size: 14px; /* Reduce text size for readability */
+        line-height: 1.4; /* Improve spacing between lines */
+        text-align: center; /* Center-align text for better presentation */
     }
 
     .features_div_wrap ul.features_ul li .features_img {
         height: 40px;
-        width: 40px;
-        font-size: large; /* Adjust icon size */
+        width: 40px; /* Adjust icon size for smaller devices */
+        margin: 0 auto 10px auto; /* Center the icon above the text */
     }
 
-    .features_div_wrap ul.features_ul li .features_text {
-        font-size: 20px; /* Reduce font size on mobile */
-    }
-
+    /* Section title adjustments */
     .section-title {
-        font-size: 1.5rem; /* Reduce the section title size */
-        margin-top: 10px; /* Adjust margin */
+        font-size: 1.2rem; /* Adjust title size for smaller screens */
+        margin: 20px 0; /* Add spacing around the title */
     }
+}
+
+/* Additional responsive fix for horizontal overflow */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }

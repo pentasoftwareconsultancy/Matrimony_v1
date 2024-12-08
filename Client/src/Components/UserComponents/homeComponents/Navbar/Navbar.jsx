@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h2 style={{color:'white'}}>Matrimony</h2>
+        <h2 style={{color:'white'}}>Maratha Vishw</h2>
       </div>
       <div className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>

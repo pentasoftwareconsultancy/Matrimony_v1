@@ -159,28 +159,33 @@ body {
 
 @media (max-width: 768px) {
   .footerSection h2 {
-    font-size: 24px;
+    font-size: 40px;
   }
 
   .footerSection h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .footerSection p {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .footerSection ul li a {
-    font-size: 14px;
+    font-size: 20px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
   }
 
   .location p,
   .contactInfo p {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .socials a {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
@@ -190,19 +195,24 @@ body {
   }
 
   .footerSection h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .footerSection h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .footerSection p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .footerSection ul li a {
-    font-size: 13px;
+    font-size: 20px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
   }
 
   .socials a {
@@ -211,6 +221,6 @@ body {
   }
 
   .footerCredit p {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
