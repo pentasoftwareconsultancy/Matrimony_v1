@@ -11,7 +11,7 @@ const Services = () => {
       <div className={styles.packageContent}>
         <h2>Free packs</h2>
         <p>Details: 3 Months</p>
-        <p>Rate: ₹ 600</p>
+        <p>Rate: ₹0</p>
         <b>Silver Membership Benefits</b>
         <ol>
           <li>Browse Profiles</li>
