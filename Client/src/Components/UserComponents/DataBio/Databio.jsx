@@ -1,20 +1,20 @@
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle, faDownload } from "@fortawesome/free-solid-svg-icons";
-import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Image1 from "../Bried/Bimages/img1.png";
+import Image10 from "../Bried/Bimages/img10.png";
+import Image2 from "../Bried/Bimages/img2.png";
+import Image3 from "../Bried/Bimages/img3.png";
+import Image4 from "../Bried/Bimages/img4.png";
+import Image5 from "../Bried/Bimages/img5.png";
+import Image6 from "../Bried/Bimages/img6.png";
+import Image7 from "../Bried/Bimages/img7.png";
+import Image8 from "../Bried/Bimages/img8.png";
+import Image9 from "../Bried/Bimages/img9.png";
 import style from "./Databio.module.css";
-import Image1 from "../Bried/Bimages/img1.png"
-import Image2 from "../Bried/Bimages/img2.png"
-import Image3 from "../Bried/Bimages/img3.png"
-import Image4 from "../Bried/Bimages/img4.png"
-import Image5 from "../Bried/Bimages/img5.png"
-import Image6 from "../Bried/Bimages/img6.png"
-import Image7 from "../Bried/Bimages/img7.png"
-import Image8 from "../Bried/Bimages/img8.png"
-import Image9 from "../Bried/Bimages/img9.png"
-import Image10 from "../Bried/Bimages/img10.png"
 
 const decryptMobileNumber = (encryptedMobno) => {
   if (encryptedMobno) {
@@ -222,7 +222,6 @@ const dummyData = [
     occupation: "Software Engineer",
     minIncome: "50000 LPA",
     motherName: "Jane Doe",
-    
     fatherName: "Richard Doe",
   },
 

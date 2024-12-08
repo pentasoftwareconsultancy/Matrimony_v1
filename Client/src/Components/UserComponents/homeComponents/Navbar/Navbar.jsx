@@ -48,11 +48,11 @@ function Navbar() {
         <Link to="/language">Language</Link>
         </li> */}
       </div>
-      <div className="navbar-login">
+      {/* <div className="navbar-login">
         <Link to="/login" className="login-button">
           Login
         </Link>
-      </div>
+      </div> */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
