@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerSection}>
-          <h2>Maratha Vishv</h2>
+          <h2>Akhil Bharatiy Kunabi Samaj</h2>
           <p>Find your perfect match with us – where love meets destiny. Explore a world of trusted connections and meaningful relationships. Your journey to forever begins here, with us by your side every step of the way.</p>
         </div>
         <div className={styles.footerSection}>
