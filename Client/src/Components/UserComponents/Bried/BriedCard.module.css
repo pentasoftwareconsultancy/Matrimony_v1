@@ -29,6 +29,10 @@ h3 {
   text-decoration: none;
 color: black;
 }
+.card img {
+  width: 100px;
+  height: 80vh;
+}
 
 /* Mobile responsiveness */
 /* Mobile responsiveness for the card */
